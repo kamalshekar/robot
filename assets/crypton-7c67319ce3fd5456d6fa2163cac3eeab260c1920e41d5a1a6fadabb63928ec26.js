@@ -2320,7 +2320,7 @@ function getCurrentMouth(t, e) {
         Vt = / jQuery\d+="(?:null|\d+)"/g,
         jt = new RegExp("<(?:" + Rt + ")[\\s/>]", "i"),
         Ht = /^\s+/,
-        Ot = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^>]*)\/>/gi,
+        Ot = /<(?!area|br|col|embed|hr|input|link|meta|param)(([\w:]+)[^>]*)\/>/gi,
         zt = /<([\w:]+)/,
         Gt = /<tbody/i,
         qt = /<|&#?\w+;/,
