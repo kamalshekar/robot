@@ -1,22 +1,126 @@
-
-
-function moveLines(i){
-
-  if(allLines[i]){
-
-    TweenMax.set(allLines[i], {
-       attr:{
-         x2:allCircles[i].getAttribute('cx'), y2:allCircles[i].getAttribute('cy')
-       }     
-     })
-   TweenMax.set(allLines[i], {
-       attr:{
-         x1:allCircles[i+1].getAttribute('cx'), y1:allCircles[i+1].getAttribute('cy')
-       }     
-     })   
-    
-
-}
+function initMap() {
+    if (google && google.maps && google.maps.Map) {
+        new google.maps.Map(document.getElementById("map"), {
+            center: new google.maps.LatLng(40.67, -73.94),
+            zoom: 17,
+            mapTypeControl: !1,
+            scrollwheel: !1,
+            fullscreenControl: !1,
+            zoomControl: !1,
+            streetViewControl: !1,
+            styles: [{
+                featureType: "all",
+                elementType: "labels.text.fill",
+                stylers: [{
+                    saturation: 36
+                }, {
+                    color: "#000000"
+                }, {
+                    lightness: 40
+                }]
+            }, {
+                featureType: "all",
+                elementType: "labels.text.stroke",
+                stylers: [{
+                    visibility: "on"
+                }, {
+                    color: "#000000"
+                }, {
+                    lightness: 16
+                }]
+            }, {
+                featureType: "all",
+                elementType: "labels.icon",
+                stylers: [{
+                    visibility: "off"
+                }]
+            }, {
+                featureType: "administrative",
+                elementType: "geometry.fill",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 20
+                }]
+            }, {
+                featureType: "administrative",
+                elementType: "geometry.stroke",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 17
+                }, {
+                    weight: 1.2
+                }]
+            }, {
+                featureType: "landscape",
+                elementType: "geometry",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 20
+                }]
+            }, {
+                featureType: "poi",
+                elementType: "geometry",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 21
+                }]
+            }, {
+                featureType: "road.highway",
+                elementType: "geometry.fill",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 17
+                }]
+            }, {
+                featureType: "road.highway",
+                elementType: "geometry.stroke",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 29
+                }, {
+                    weight: .2
+                }]
+            }, {
+                featureType: "road.arterial",
+                elementType: "geometry",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 18
+                }]
+            }, {
+                featureType: "road.local",
+                elementType: "geometry",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 16
+                }]
+            }, {
+                featureType: "transit",
+                elementType: "geometry",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 19
+                }]
+            }, {
+                featureType: "water",
+                elementType: "geometry",
+                stylers: [{
+                    color: "#000000"
+                }, {
+                    lightness: 17
+                }]
+            }]
+        })
+    }
 }
 
 function applyState(t, e, r, i) {
@@ -132,7 +236,7 @@ function animKeys(t, e, r) {
 
 function playScenario(t, e) {
     window.frameWithPrint = !1, Object.keys(scenario).forEach(function(t) {
-        $cache(t).c(scenario[t])
+        $cache(t).cryptonA(scenario[t])
     }), enhancePlayCover(t), window.faceTalk(t, e), window.setGoToAndStop(t)
 }
 
@@ -167,7 +271,7 @@ function updateScenario(t) {
         n = i - 600,
         s = $cache("#cover_title").text().length + 5,
         a = $cache("#cover_lid").text().length + 5;
-    scenario["#animItem-1"] = [fullBlock(), textOut(i, -1, 2)], scenario["#cover_title"] = [textTyping(n + 1, 300, s), timeBlock(n + 300, i), textTypingReverse(i, -1, s)], scenario["#cover_lid"] = [textTyping(n + 300, 300, a), timeBlock(n + 300 + 300, i), textTypingReverse(i, -1, a)], scenario["#animItem-cursor"] = [timeBlock(i, -1, attr("transform:scaleY:", 1, horizontal ? 30 : 40)), timeBlock(i, i + 200, attr("background-color", "#ffffff", "#ffffff"))], scenario["#animItem-arrow-down-cover"] = [timeBlock(i, i + 100), timeBlock(i + 100, -1, attr("opacity", 1, 0))];
+    scenario["#animItem-1"] = [fullBlock(), textOut(i, -1, 2)], scenario["#cover_title"] = [textTyping(n + 1, 300, s), timeBlock(n + 300, i), textTypingReverse(i, -1, s)], scenario["#cover_lid"] = [textTyping(n + 300, 300, a), timeBlock(n + 300 + 300, i), textTypingReverse(i, -1, a)], scenario["#animItem-cursor"] = [timeBlock(i, -1, attr("transform:scaleY:", 1, horizontal ? 30 : 40)), timeBlock(i, i + 200, attr("background-color", "#186ab4", "#000000"))], scenario["#animItem-arrow-down-cover"] = [timeBlock(i, i + 100), timeBlock(i + 100, -1, attr("opacity", 1, 0))];
     var o = [{
         screenKey: "2_1",
         inTime: 0,
@@ -1578,7 +1682,7 @@ function getCurrentMouth(t, e) {
         }, P.sortStable = j.split("").sort($).join("") === j, P.detectDuplicates = !!D, F(), P.sortDetached = n(function(t) {
             return 1 & t.compareDocumentPosition(I.createElement("div"))
         }), n(function(t) {
-            // return t.innerHTML = "<a href='#'></a>", "#" === t.firstChild.getAttribute("href")
+            return t.innerHTML = "<a href='#'></a>", "#" === t.firstChild.getAttribute("href")
         }) || s("type|href|height|width", function(t, e, r) {
             return r ? void 0 : t.getAttribute(e, "type" === e.toLowerCase() ? 1 : 2)
         }), P.attributes && n(function(t) {
@@ -2027,7 +2131,20 @@ function getCurrentMouth(t, e) {
         },
         Ft = /^(?:checkbox|radio)$/i;
     ! function() {
-      
+        var t = mt.createDocumentFragment(),
+            e = mt.createElement("div"),
+            r = mt.createElement("input");
+        if (e.setAttribute("className", "t"), e.innerHTML = "  <link/><table></table><a href='/a'>a</a>", it.leadingWhitespace = 3 === e.firstChild.nodeType, it.tbody = !e.getElementsByTagName("tbody").length, it.htmlSerialize = !!e.getElementsByTagName("link").length, it.html5Clone = "<:nav></:nav>" !== mt.createElement("nav").cloneNode(!0).outerHTML, r.type = "checkbox", r.checked = !0, t.appendChild(r), it.appendChecked = r.checked, e.innerHTML = "<textarea>x</textarea>", it.noCloneChecked = !!e.cloneNode(!0).lastChild.defaultValue, t.appendChild(e), e.innerHTML = "<input type='radio' checked='checked' name='t'/>", it.checkClone = e.cloneNode(!0).cloneNode(!0).lastChild.checked, it.noCloneEvent = !0, e.attachEvent && (e.attachEvent("onclick", function() {
+                it.noCloneEvent = !1
+            }), e.cloneNode(!0).click()), null == it.deleteExpando) {
+            it.deleteExpando = !0;
+            try {
+                delete e.test
+            } catch (i) {
+                it.deleteExpando = !1
+            }
+        }
+        t = e = r = null
     }(),
     function() {
         var e, r, i = mt.createElement("div");
@@ -2326,7 +2443,7 @@ function getCurrentMouth(t, e) {
         Vt = / jQuery\d+="(?:null|\d+)"/g,
         jt = new RegExp("<(?:" + Rt + ")[\\s/>]", "i"),
         Ht = /^\s+/,
-        Ot = /<(?!area|br|col|embed|hr|input|link|meta|param)(([\w:]+)[^>]*)\/>/gi,
+        Ot = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^>]*)\/>/gi,
         zt = /<([\w:]+)/,
         Gt = /<tbody/i,
         qt = /<|&#?\w+;/,
@@ -2470,7 +2587,9 @@ function getCurrentMouth(t, e) {
             });
             if (h && (o = st.buildFragment(t, this[0].ownerDocument, !1, this), r = o.firstChild, 1 === o.childNodes.length && (o = r), r)) {
                 for (s = st.map(y(o, "script"), b), n = s.length; h > l; l++) i = o, l !== c && (i = st.clone(i, !0, !0), n && st.merge(s, y(i, "script"))), e.call(this[l], i, l);
-               
+                if (n)
+                    for (a = s[s.length - 1].ownerDocument, st.map(s, x), l = 0; n > l; l++) i = s[l], Xt.test(i.type || "") && !st._data(i, "globalEval") && st.contains(a, i) && (i.src ? st._evalUrl && st._evalUrl(i.src) : st.globalEval((i.text || i.textContent || i.innerHTML || "").replace(Ut, "")));
+                o = r = null
             }
             return this
         }
@@ -3079,7 +3198,26 @@ function getCurrentMouth(t, e) {
             return 1 === arguments.length ? this.off(t, "**") : this.off(e, t || "**", r)
         }
     });
-  
+    var Fe = st.now(),
+        Ie = /\?/,
+        _e = /(,)|(\[|{)|(}|])|"(?:[^"\\\r\n]|\\["\\\/bfnrt]|\\u[\da-fA-F]{4})*"\s*:?|true|false|null|-?(?!0\d)\d+(?:\.\d+|)(?:[eE][+-]?\d+|)/g;
+    st.parseJSON = function(e) {
+        if (t.JSON && t.JSON.parse) return t.JSON.parse(e + "");
+        var r, i = null,
+            n = st.trim(e + "");
+        return n && !st.trim(n.replace(_e, function(t, e, n, s) {
+            return r && e && (i = 0), 0 === i ? t : (r = n || e, i += !s - !n, "")
+        })) ? Function("return " + n)() : st.error("Invalid JSON: " + e)
+    }, st.parseXML = function(e) {
+        var r, i;
+        if (!e || "string" != typeof e) return null;
+        try {
+            t.DOMParser ? (i = new DOMParser, r = i.parseFromString(e, "text/xml")) : (r = new ActiveXObject("Microsoft.XMLDOM"), r.async = "false", r.loadXML(e))
+        } catch (n) {
+            r = void 0
+        }
+        return r && r.documentElement && !r.getElementsByTagName("parsererror").length || st.error("Invalid XML: " + e), r
+    };
     var Ne, Be, Le = /#.*$/,
         Re = /([?&])_=[^&]*/,
         Ve = /^(.*?):[ \t]*([^\r\n]*)\r?$/gm,
@@ -3106,25 +3244,33 @@ function getCurrentMouth(t, e) {
             global: !0,
             processData: !0,
             async: !0,
-            contentType: "",
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
             accepts: {
                 "*": We,
-                text: "",
-                html: "",
-                xml: "",
-                json: ""
+                text: "text/plain",
+                html: "text/html",
+                xml: "application/xml, text/xml",
+                json: "application/json, text/javascript"
             },
             contents: {
-                
+                xml: /xml/,
+                html: /html/,
+                json: /json/
             },
             responseFields: {
-               
+                xml: "responseXML",
+                text: "responseText",
+                json: "responseJSON"
             },
             converters: {
-            
+                "* text": String,
+                "text html": !0,
+                "text json": st.parseJSON,
+                "text xml": st.parseXML
             },
             flatOptions: {
-             
+                url: !0,
+                context: !0
             }
         },
         ajaxSetup: function(t, e) {
@@ -3371,7 +3517,7 @@ function getCurrentMouth(t, e) {
             var e, r = mt.head || st("head")[0] || mt.documentElement;
             return {
                 send: function(i, n) {
-                    e = mt.createElement("script"), e.async = !0, t.scriptCharset && (e.charset = t.scriptCharset), e.src = t.url, e.onload = e.onreadystatechange = function(t, r) {
+                    e = mt.createElement("script"), e.async = !0, t.scriptCharset && (e.charset = t.script000000000000000000000Charset), e.src = t.url, e.onload = e.onreadystatechange = function(t, r) {
                         (r || !e.readyState || /loaded|complete/.test(e.readyState)) && (e.onload = e.onreadystatechange = null, e.parentNode && e.parentNode.removeChild(e), e = null, r || n(200, "success"))
                     }, r.insertBefore(e, r.firstChild)
                 },
@@ -4050,8 +4196,8 @@ function getCurrentMouth(t, e) {
         }, this.elements = [], this.pendingElements = [], this.destroyed = !1
     }
 
-    function MaskElementpop(t, e, r) {
-        this.dynamicProperties = [], this.data = t, this.element = e, this.globalData = r, this.paths = [], this.storedData = [], this.masksProperties = this.data.masksProperties, this.viewData = new Array(this.masksProperties.length), this.MaskElementpop = null, this.firstFrame = !0;
+    function MaskElement(t, e, r) {
+        this.dynamicProperties = [], this.data = t, this.element = e, this.globalData = r, this.paths = [], this.storedData = [], this.masksProperties = this.data.masksProperties, this.viewData = new Array(this.masksProperties.length), this.maskElement = null, this.firstFrame = !0;
         var i, n, s, a, o, l, h, p, c = this.globalData.defs,
             f = this.masksProperties.length,
             u = this.masksProperties,
@@ -4093,8 +4239,8 @@ function getCurrentMouth(t, e) {
                 prop: ShapePropertyFactory.getShapeProp(this.element, u[i], 3, this.dynamicProperties, null),
                 elem: n
             }, c.appendChild(n);
-        for (this.MaskElementpop = document.createElementNS(svgNS, g), f = m.length, i = 0; f > i; i += 1) this.MaskElementpop.appendChild(m[i]);
-        this.MaskElementpop.setAttribute("id", y), d > 0 && this.element.maskedElement.setAttribute(v, "url(#" + y + ")"), c.appendChild(this.MaskElementpop)
+        for (this.maskElement = document.createElementNS(svgNS, g), f = m.length, i = 0; f > i; i += 1) this.maskElement.appendChild(m[i]);
+        this.maskElement.setAttribute("id", y), d > 0 && this.element.maskedElement.setAttribute(v, "url(#" + y + ")"), c.appendChild(this.maskElement)
     }
 
     function BaseElement() {}
@@ -4264,7 +4410,7 @@ function getCurrentMouth(t, e) {
         this.assetData = r.getAssetData(t.refId), this._parent.constructor.call(this, t, e, r), this.globalData.addPendingElement()
     }
 
-    function CVMaskElementpop(t, e) {
+    function CVMaskElement(t, e) {
         this.data = t, this.element = e, this.dynamicProperties = [], this.masksProperties = this.data.masksProperties, this.viewData = new Array(this.masksProperties.length);
         var r, i = this.masksProperties.length;
         for (r = 0; i > r; r++) this.viewData[r] = ShapePropertyFactory.getShapeProp(this.element, this.masksProperties[r], 3, this.dynamicProperties, null)
@@ -4738,7 +4884,7 @@ function getCurrentMouth(t, e) {
             try {
                 if (h) return l(h.randomBytes(c));
                 var e = new Uint8Array(c);
-                return (p.ss || p.msss).getRandomValues(e), l(e)
+                return (p.crypto || p.msCrypto).getRandomValues(e), l(e)
             } catch (r) {
                 var i = p.navigator,
                     n = i && i.plugins;
@@ -6011,36 +6157,36 @@ function getCurrentMouth(t, e) {
                 var n = this.createComp(t[e], i, this.globalData.comp, null);
                 n.initExpressions(), this.globalData.projectInterface.registerComposition(n)
             }
-    }, MaskElementpop.prototype.getMaskProperty = function(t) {
+    }, MaskElement.prototype.getMaskProperty = function(t) {
         return this.viewData[t].prop
-    }, MaskElementpop.prototype.prepareFrame = function() {
+    }, MaskElement.prototype.prepareFrame = function() {
         var t, e = this.dynamicProperties.length;
         for (t = 0; e > t; t += 1) this.dynamicProperties[t].getValue();
-    }, MaskElementpop.prototype.renderFrame = function(t) {
+    }, MaskElement.prototype.renderFrame = function(t) {
         var e, r = this.masksProperties.length;
         for (e = 0; r > e; e++)
             if ((this.viewData[e].prop.mdf || this.firstFrame) && this.drawPath(this.masksProperties[e], this.viewData[e].prop.v, this.viewData[e]), (this.viewData[e].op.mdf || this.firstFrame) && this.viewData[e].elem.setAttribute("fill-opacity", this.viewData[e].op.v), "n" !== this.masksProperties[e].mode && (this.viewData[e].invRect && (this.element.finalTransform.mProp.mdf || this.firstFrame) && (this.viewData[e].invRect.setAttribute("x", -t.props[12]), this.viewData[e].invRect.setAttribute("y", -t.props[13])), this.storedData[e].x && (this.storedData[e].x.mdf || this.firstFrame))) {
                 var i = this.storedData[e].expan;
                 this.storedData[e].x.v < 0 ? ("erode" !== this.storedData[e].lastOperator && (this.storedData[e].lastOperator = "erode", this.storedData[e].elem.setAttribute("filter", "url(#" + this.storedData[e].filterId + ")")), i.setAttribute("radius", -this.storedData[e].x.v)) : ("dilate" !== this.storedData[e].lastOperator && (this.storedData[e].lastOperator = "dilate", this.storedData[e].elem.setAttribute("filter", null)), this.storedData[e].elem.setAttribute("stroke-width", 2 * this.storedData[e].x.v))
             } this.firstFrame = !1
-    }, MaskElementpop.prototype.getMaskElementpop = function() {
-        return this.MaskElementpop
-    }, MaskElementpop.prototype.createLayerSolidPath = function() {
+    }, MaskElement.prototype.getMaskelement = function() {
+        return this.maskElement
+    }, MaskElement.prototype.createLayerSolidPath = function() {
         var t = "M0,0 ";
         return t += " h" + this.globalData.compSize.w, t += " v" + this.globalData.compSize.h, t += " h-" + this.globalData.compSize.w, t += " v-" + this.globalData.compSize.h + " "
-    }, MaskElementpop.prototype.drawPath = function(t, e, r) {
+    }, MaskElement.prototype.drawPath = function(t, e, r) {
         var i, n, s = " M" + e.v[0][0] + "," + e.v[0][1];
         for (n = e._length, i = 1; n > i; i += 1) s += " C" + bm_rnd(e.o[i - 1][0]) + "," + bm_rnd(e.o[i - 1][1]) + " " + bm_rnd(e.i[i][0]) + "," + bm_rnd(e.i[i][1]) + " " + bm_rnd(e.v[i][0]) + "," + bm_rnd(e.v[i][1]);
         e.c && n > 1 && (s += " C" + bm_rnd(e.o[i - 1][0]) + "," + bm_rnd(e.o[i - 1][1]) + " " + bm_rnd(e.i[0][0]) + "," + bm_rnd(e.i[0][1]) + " " + bm_rnd(e.v[0][0]) + "," + bm_rnd(e.v[0][1])), r.lastPath !== s && (r.elem && (e.c ? t.inv ? r.elem.setAttribute("d", this.solidPath + s) : r.elem.setAttribute("d", s) : r.elem.setAttribute("d", "")), r.lastPath = s)
-    }, MaskElementpop.prototype.getMask = function(t) {
+    }, MaskElement.prototype.getMask = function(t) {
         for (var e = 0, r = this.masksProperties.length; r > e;) {
             if (this.masksProperties[e].nm === t) return {
                 maskPath: this.viewData[e].prop.pv
             };
             e += 1
         }
-    }, MaskElementpop.prototype.destroy = function() {
-        this.element = null, this.globalData = null, this.MaskElementpop = null, this.data = null, this.paths = null, this.masksProperties = null
+    }, MaskElement.prototype.destroy = function() {
+        this.element = null, this.globalData = null, this.maskElement = null, this.data = null, this.paths = null, this.masksProperties = null
     }, BaseElement.prototype.checkMasks = function() {
         if (!this.data.hasMask) return !1;
         for (var t = 0, e = this.data.masksProperties.length; e > t;) {
@@ -6207,7 +6353,7 @@ function getCurrentMouth(t, e) {
     }, SVGBaseElement.prototype.getBaseElement = function() {
         return this.baseElement
     }, SVGBaseElement.prototype.addMasks = function(t) {
-        this.maskManager = new MaskElementpop(t, this, this.globalData)
+        this.maskManager = new MaskElement(t, this, this.globalData)
     }, SVGBaseElement.prototype.setMatte = function(t) {
         this.matteElement && this.matteElement.setAttribute("mask", "url(#" + t + ")")
     }, SVGBaseElement.prototype.setMatte = function(t) {
@@ -6545,7 +6691,7 @@ function getCurrentMouth(t, e) {
         for (t = 0; e > t; t += 1) this.elements[t] && this.elements[t].destroy()
     }, ICompElement.prototype.checkLayers = SVGRenderer.prototype.checkLayers, ICompElement.prototype.buildItem = SVGRenderer.prototype.buildItem, ICompElement.prototype.buildAllItems = SVGRenderer.prototype.buildAllItems, ICompElement.prototype.buildElementParenting = SVGRenderer.prototype.buildElementParenting, ICompElement.prototype.createItem = SVGRenderer.prototype.createItem, ICompElement.prototype.createImage = SVGRenderer.prototype.createImage, ICompElement.prototype.createComp = SVGRenderer.prototype.createComp, ICompElement.prototype.createSolid = SVGRenderer.prototype.createSolid, ICompElement.prototype.createShape = SVGRenderer.prototype.createShape, ICompElement.prototype.createText = SVGRenderer.prototype.createText, ICompElement.prototype.createBase = SVGRenderer.prototype.createBase, ICompElement.prototype.appendElementInPos = SVGRenderer.prototype.appendElementInPos, ICompElement.prototype.checkPendingElements = SVGRenderer.prototype.checkPendingElements, ICompElement.prototype.addPendingElement = SVGRenderer.prototype.addPendingElement, createElement(SVGBaseElement, IImageElement), IImageElement.prototype.createElements = function() {
         var t = this.globalData.getAssetsPath(this.assetData);
-        this._parent.createElements.call(this), this.innerElem = document.createElementNS(svgNS, "image"), this.innerElem.setAttribute("width", this.assetData.w + "px"), this.innerElem.setAttribute("height", this.assetData.h + "px"), this.innerElem.setAttribute("preserveAspectRatio", "xMidYMid slice"), this.innerElem.setAttributeNS("http://www.w3.org/1999/xlink", "href", t), this.maskedElement = this.innerElem, this.layerElement.appendChild(this.innerElem), this.data.ln && this.layerElement.setAttribute("id", this.data.ln), this.data.cl && this.layerElement.setAttribute("class", this.data.cl)
+        this._parent.createElements.call(this), this.innerElem = document.createElementNS(svgNS, "image"), this.innerElem.setAttribute("width", this.assetData.w + "px"), this.innerElem.setAttribute("height", this.assetData.h + "px"), this.innerElem.setAttribute("preserveAspectRatio", "xMidYMid slice"), this.innerElem.setAttributeNS("", "href", t), this.maskedElement = this.innerElem, this.layerElement.appendChild(this.innerElem), this.data.ln && this.layerElement.setAttribute("id", this.data.ln), this.data.cl && this.layerElement.setAttribute("class", this.data.cl)
     }, IImageElement.prototype.hide = function() {
         this.hidden || (this.layerElement.style.display = "none", this.hidden = !0)
     }, IImageElement.prototype.renderFrame = function(t) {
@@ -6915,6 +7061,136 @@ function getCurrentMouth(t, e) {
         r.autoplay = "false" !== s, r.name = i.getNamedItem("data-name") ? i.getNamedItem("data-name").value : i.getNamedItem("data-bm-name") ? i.getNamedItem("data-bm-name").value : i.getNamedItem("bm-name") ? i.getNamedItem("bm-name").value : "";
         var a = i.getNamedItem("data-anim-prerender") ? i.getNamedItem("data-anim-prerender").value : i.getNamedItem("data-bm-prerender") ? i.getNamedItem("data-bm-prerender").value : i.getNamedItem("bm-prerender") ? i.getNamedItem("bm-prerender").value : "";
         "false" === a && (r.prerender = !1), this.setParams(r)
+    }, AnimationItem.prototype.includeLayers = function(t) {
+        t.op > this.animationData.op && (this.animationData.op = t.op, this.totalFrames = Math.floor(t.op - this.animationData.ip), this.animationData.tf = this.totalFrames);
+        var e, r, i = this.animationData.layers,
+            n = i.length,
+            s = t.layers,
+            a = s.length;
+        for (r = 0; a > r; r += 1)
+            for (e = 0; n > e;) {
+                if (i[e].id == s[r].id) {
+                    i[e] = s[r];
+                    break
+                }
+                e += 1
+            }
+        if ((t.chars || t.fonts) && (this.renderer.globalData.fontManager.addChars(t.chars), this.renderer.globalData.fontManager.addFonts(t.fonts, this.renderer.globalData.defs)), t.assets)
+            for (n = t.assets.length, e = 0; n > e; e += 1) this.animationData.assets.push(t.assets[e]);
+        this.animationData.__complete = !1, dataManager.completeData(this.animationData, this.renderer.globalData.fontManager), this.renderer.includeLayers(t.layers), expressionsPlugin && expressionsPlugin.initExpressions(this), this.renderer.renderFrame(null), this.loadNextSegment()
+    }, AnimationItem.prototype.loadNextSegment = function() {
+        var t = this.animationData.segments;
+        if (!t || 0 === t.length || !this.autoloadSegments) return this.trigger("data_ready"), void(this.timeCompleted = this.animationData.tf);
+        var e = t.shift();
+        this.timeCompleted = e.time * this.frameRate;
+        var r = new XMLHttpRequest,
+            i = this,
+            n = this.path + this.fileName + "_" + this.segmentPos + ".json";
+        this.segmentPos += 1, r.open("GET", n, !0), r.send(), r.onreadystatechange = function() {
+            if (4 == r.readyState)
+                if (200 == r.status) i.includeLayers(JSON.parse(r.responseText));
+                else try {
+                    var t = JSON.parse(r.responseText);
+                    i.includeLayers(t)
+                } catch (e) {}
+        }
+    }, AnimationItem.prototype.loadSegments = function() {
+        var t = this.animationData.segments;
+        t || (this.timeCompleted = this.animationData.tf), this.loadNextSegment()
+    }, AnimationItem.prototype.configAnimation = function(t) {
+        this.renderer && this.renderer.destroyed || (this.animationData = t, this.totalFrames = Math.floor(this.animationData.op - this.animationData.ip), this.animationData.tf = this.totalFrames, this.renderer.configAnimation(t), t.assets || (t.assets = []), t.comps && (t.assets = t.assets.concat(t.comps), t.comps = null), this.renderer.searchExtraCompositions(t.assets), this.layers = this.animationData.layers, this.assets = this.animationData.assets, this.frameRate = this.animationData.fr, this.firstFrame = Math.round(this.animationData.ip), this.frameMult = this.animationData.fr / 1e3, this.trigger("config_ready"), this.imagePreloader = new ImagePreloader, this.imagePreloader.setAssetsPath(this.assetsPath), this.imagePreloader.setPath(this.path), this.imagePreloader.loadAssets(t.assets), this.loadSegments(), this.updaFrameModifier(), this.renderer.globalData.fontManager ? this.waitForFontsLoaded() : (dataManager.completeData(this.animationData, this.renderer.globalData.fontManager), this.checkLoaded()))
+    }, AnimationItem.prototype.waitForFontsLoaded = function() {
+        function t() {
+            this.renderer.globalData.fontManager.loaded ? (dataManager.completeData(this.animationData, this.renderer.globalData.fontManager), this.checkLoaded()) : setTimeout(t.bind(this), 20)
+        }
+        return function() {
+            t.bind(this)()
+        }
+    }(), AnimationItem.prototype.addPendingElement = function() {
+        this.pendingElements += 1
+    }, AnimationItem.prototype.elementLoaded = function() {
+        this.pendingElements--, this.checkLoaded()
+    }, AnimationItem.prototype.checkLoaded = function() {
+        0 === this.pendingElements && (expressionsPlugin && expressionsPlugin.initExpressions(this), this.renderer.initItems(), setTimeout(function() {
+            this.trigger("DOMLoaded")
+        }.bind(this), 0), this.isLoaded = !0, this.gotoFrame(), this.autoplay && this.play())
+    }, AnimationItem.prototype.resize = function() {
+        this.renderer.updateContainerSize()
+    }, AnimationItem.prototype.setSubframe = function(t) {
+        this.subframeEnabled = t ? !0 : !1
+    }, AnimationItem.prototype.gotoFrame = function() {
+        this.currentFrame = this.subframeEnabled ? this.currentRawFrame : Math.floor(this.currentRawFrame), this.timeCompleted !== this.totalFrames && this.currentFrame > this.timeCompleted && (this.currentFrame = this.timeCompleted), this.trigger("enterFrame"), this.renderFrame()
+    }, AnimationItem.prototype.renderFrame = function() {
+        this.isLoaded !== !1 && this.renderer.renderFrame(this.currentFrame + this.firstFrame)
+    }, AnimationItem.prototype.play = function(t) {
+        t && this.name != t || this.isPaused === !0 && (this.isPaused = !1, this._idle && (this._idle = !1, this.trigger("_active")))
+    }, AnimationItem.prototype.pause = function(t) {
+        t && this.name != t || this.isPaused === !1 && (this.isPaused = !0, this.pendingSegment || (this._idle = !0, this.trigger("_idle")))
+    }, AnimationItem.prototype.togglePause = function(t) {
+        t && this.name != t || (this.isPaused === !0 ? this.play() : this.pause())
+    }, AnimationItem.prototype.stop = function(t) {
+        t && this.name != t || (this.pause(), this.currentFrame = this.currentRawFrame = 0, this.playCount = 0, this.gotoFrame())
+    }, AnimationItem.prototype.goToAndStop = function(t, e, r) {
+        r && this.name != r || (this.setCurrentRawFrameValue(e ? t : t * this.frameModifier), this.pause())
+    }, AnimationItem.prototype.goToAndPlay = function(t, e, r) {
+        this.goToAndStop(t, e, r), this.play()
+    }, AnimationItem.prototype.advanceTime = function(t) {
+        return this.pendingSegment ? (this.pendingSegment = !1, this.adjustSegment(this.segments.shift()), void(this.isPaused && this.play())) : void(this.isPaused !== !0 && this.isLoaded !== !1 && this.setCurrentRawFrameValue(this.currentRawFrame + t * this.frameModifier))
+    }, AnimationItem.prototype.updateAnimation = function(t) {
+        this.setCurrentRawFrameValue(this.totalFrames * t)
+    }, AnimationItem.prototype.moveFrame = function(t, e) {
+        e && this.name != e || this.setCurrentRawFrameValue(this.currentRawFrame + t)
+    }, AnimationItem.prototype.adjustSegment = function(t) {
+        this.playCount = 0, t[1] < t[0] ? (this.frameModifier > 0 && (this.playSpeed < 0 ? this.setSpeed(-this.playSpeed) : this.setDirection(-1)), this.totalFrames = t[0] - t[1], this.firstFrame = t[1], this.setCurrentRawFrameValue(this.totalFrames - .01)) : t[1] > t[0] && (this.frameModifier < 0 && (this.playSpeed < 0 ? this.setSpeed(-this.playSpeed) : this.setDirection(1)), this.totalFrames = t[1] - t[0], this.firstFrame = t[0], this.setCurrentRawFrameValue(0)), this.trigger("segmentStart")
+    }, AnimationItem.prototype.setSegment = function(t, e) {
+        var r = -1;
+        this.isPaused && (this.currentRawFrame + this.firstFrame < t ? r = t : this.currentRawFrame + this.firstFrame > e && (r = e - t - .01)), this.firstFrame = t, this.totalFrames = e - t, -1 !== r && this.goToAndStop(r, !0)
+    }, AnimationItem.prototype.playSegments = function(t, e) {
+        if ("object" == typeof t[0]) {
+            var r, i = t.length;
+            for (r = 0; i > r; r += 1) this.segments.push(t[r])
+        } else this.segments.push(t);
+        e && this.adjustSegment(this.segments.shift()), this.isPaused && this.play()
+    }, AnimationItem.prototype.resetSegments = function(t) {
+        this.segments.length = 0, this.segments.push([this.animationData.ip * this.frameRate, Math.floor(this.animationData.op - this.animationData.ip + this.animationData.ip * this.frameRate)]), t && this.adjustSegment(this.segments.shift())
+    }, AnimationItem.prototype.checkSegments = function() {
+        this.segments.length && (this.pendingSegment = !0)
+    }, AnimationItem.prototype.remove = function(t) {
+        t && this.name != t || this.renderer.destroy()
+    }, AnimationItem.prototype.destroy = function(t) {
+        t && this.name != t || this.renderer && this.renderer.destroyed || (this.renderer.destroy(), this.trigger("destroy"), this._cbs = null, this.onEnterFrame = this.onLoopComplete = this.onComplete = this.onSegmentStart = this.onDestroy = null)
+    }, AnimationItem.prototype.setCurrentRawFrameValue = function(t) {
+        if (this.currentRawFrame = t, this.currentRawFrame >= this.totalFrames) {
+            if (this.checkSegments(), this.loop === !1) return this.currentRawFrame = this.totalFrames - .01, this.gotoFrame(), this.pause(), void this.trigger("complete");
+            if (this.trigger("loopComplete"), this.playCount += 1, this.loop !== !0 && this.playCount == this.loop || this.pendingSegment) return this.currentRawFrame = this.totalFrames - .01, this.gotoFrame(), this.pause(), void this.trigger("complete");
+            this.currentRawFrame = this.currentRawFrame % this.totalFrames
+        } else if (this.currentRawFrame < 0) return this.checkSegments(), this.playCount -= 1, this.playCount < 0 && (this.playCount = 0), this.loop === !1 || this.pendingSegment ? (this.currentRawFrame = 0, this.gotoFrame(), this.pause(), void this.trigger("complete")) : (this.trigger("loopComplete"), this.currentRawFrame = (this.totalFrames + this.currentRawFrame) % this.totalFrames, void this.gotoFrame());
+        this.gotoFrame()
+    }, AnimationItem.prototype.setSpeed = function(t) {
+        this.playSpeed = t, this.updaFrameModifier()
+    }, AnimationItem.prototype.setDirection = function(t) {
+        this.playDirection = 0 > t ? -1 : 1, this.updaFrameModifier()
+    }, AnimationItem.prototype.updaFrameModifier = function() {
+        this.frameModifier = this.frameMult * this.playSpeed * this.playDirection
+    }, AnimationItem.prototype.getPath = function() {
+        return this.path
+    }, AnimationItem.prototype.getAssetsPath = function(t) {
+        var e = "";
+        if (this.assetsPath) {
+            var r = t.p; - 1 !== r.indexOf("images/") && (r = r.split("/")[1]), e = this.assetsPath + r
+        } else e = this.path, e += t.u ? t.u : "", e += t.p;
+        return e
+    }, AnimationItem.prototype.getAssetData = function(t) {
+        for (var e = 0, r = this.assets.length; r > e;) {
+            if (t == this.assets[e].id) return this.assets[e];
+            e += 1
+        }
+    }, AnimationItem.prototype.hide = function() {
+        this.renderer.hide()
+    }, AnimationItem.prototype.show = function() {
+        this.renderer.show()
+    }, AnimationItem.prototype.getAssets = function() {
+        return this.assets
     }, AnimationItem.prototype.trigger = function(t) {
         if (this._cbs && this._cbs[t]) switch (t) {
             case "enterFrame":
@@ -6946,7 +7222,15 @@ function getCurrentMouth(t, e) {
         return new CVImageElement(t, this, this.globalData)
     }, CanvasRenderer.prototype.createComp = function(t) {
         return new CVCompElement(t, this, this.globalData)
-
+    }, CanvasRenderer.prototype.createSolid = function(t) {
+        return new CVSolidElement(t, this, this.globalData)
+    }, CanvasRenderer.prototype.ctxTransform = function(t) {
+        if (1 !== t[0] || 0 !== t[1] || 0 !== t[4] || 1 !== t[5] || 0 !== t[12] || 0 !== t[13]) {
+            if (!this.renderConfig.clearCanvas) return void this.canvasContext.transform(t[0], t[1], t[4], t[5], t[12], t[13]);
+            this.transformMat.cloneFromProps(t), this.transformMat.transform(this.contextData.cTr.props[0], this.contextData.cTr.props[1], this.contextData.cTr.props[2], this.contextData.cTr.props[3], this.contextData.cTr.props[4], this.contextData.cTr.props[5], this.contextData.cTr.props[6], this.contextData.cTr.props[7], this.contextData.cTr.props[8], this.contextData.cTr.props[9], this.contextData.cTr.props[10], this.contextData.cTr.props[11], this.contextData.cTr.props[12], this.contextData.cTr.props[13], this.contextData.cTr.props[14], this.contextData.cTr.props[15]), this.contextData.cTr.cloneFromProps(this.transformMat.props);
+            var e = this.contextData.cTr.props;
+            this.canvasContext.setTransform(e[0], e[1], e[4], e[5], e[12], e[13])
+        }
     }, CanvasRenderer.prototype.ctxOpacity = function(t) {
         if (1 !== t) {
             if (!this.renderConfig.clearCanvas) return void(this.canvasContext.globalAlpha *= 0 > t ? 0 : t);
@@ -6954,8 +7238,80 @@ function getCurrentMouth(t, e) {
         }
     }, CanvasRenderer.prototype.reset = function() {
         return this.renderConfig.clearCanvas ? (this.contextData.cArrPos = 0, this.contextData.cTr.reset(), void(this.contextData.cO = 1)) : void this.canvasContext.restore()
-    },
-    extendPrototype(BaseRenderer, HybridRenderer), HybridRenderer.prototype.buildItem = SVGRenderer.prototype.buildItem, HybridRenderer.prototype.checkPendingElements = function() {
+    }, CanvasRenderer.prototype.save = function(t) {
+        if (!this.renderConfig.clearCanvas) return void this.canvasContext.save();
+        t && this.canvasContext.save();
+        var e = this.contextData.cTr.props;
+        (null === this.contextData.saved[this.contextData.cArrPos] || void 0 === this.contextData.saved[this.contextData.cArrPos]) && (this.contextData.saved[this.contextData.cArrPos] = new Array(16));
+        var r, i = this.contextData.saved[this.contextData.cArrPos];
+        for (r = 0; 16 > r; r += 1) i[r] = e[r];
+        this.contextData.savedOp[this.contextData.cArrPos] = this.contextData.cO, this.contextData.cArrPos += 1
+    }, CanvasRenderer.prototype.restore = function(t) {
+        if (!this.renderConfig.clearCanvas) return void this.canvasContext.restore();
+        t && this.canvasContext.restore(), this.contextData.cArrPos -= 1;
+        var e, r = this.contextData.saved[this.contextData.cArrPos],
+            i = this.contextData.cTr.props;
+        for (e = 0; 16 > e; e += 1) i[e] = r[e];
+        this.canvasContext.setTransform(r[0], r[1], r[4], r[5], r[12], r[13]), r = this.contextData.savedOp[this.contextData.cArrPos], this.contextData.cO = r, this.canvasContext.globalAlpha = r
+    }, CanvasRenderer.prototype.configAnimation = function(t) {
+        this.animationItem.wrapper ? (this.animationItem.container = document.createElement("canvas"),
+            this.animationItem.container.style.width = "100%", this.animationItem.container.style.height = "100%", this.animationItem.container.style.transformOrigin = this.animationItem.container.style.mozTransformOrigin = this.animationItem.container.style.webkitTransformOrigin = this.animationItem.container.style["-webkit-transform"] = "0px 0px 0px", this.animationItem.wrapper.appendChild(this.animationItem.container), this.canvasContext = this.animationItem.container.getContext("2d")) : this.canvasContext = this.renderConfig.context, this.data = t, this.globalData.canvasContext = this.canvasContext, this.globalData.renderer = this, this.globalData.isDashed = !1, this.globalData.totalFrames = Math.floor(t.tf), this.globalData.compWidth = t.w, this.globalData.compHeight = t.h, this.globalData.frameRate = t.fr, this.globalData.frameId = 0, this.globalData.compSize = {
+            w: t.w,
+            h: t.h
+        }, this.globalData.progressiveLoad = this.renderConfig.progressiveLoad, this.layers = t.layers, this.transformCanvas = {}, this.transformCanvas.w = t.w, this.transformCanvas.h = t.h, this.globalData.fontManager = new FontManager, this.globalData.fontManager.addChars(t.chars), this.globalData.fontManager.addFonts(t.fonts, document.body), this.globalData.getAssetData = this.animationItem.getAssetData.bind(this.animationItem), this.globalData.getAssetsPath = this.animationItem.getAssetsPath.bind(this.animationItem), this.globalData.elementLoaded = this.animationItem.elementLoaded.bind(this.animationItem), this.globalData.addPendingElement = this.animationItem.addPendingElement.bind(this.animationItem), this.globalData.transformCanvas = this.transformCanvas, this.elements = Array.apply(null, {
+            length: t.layers.length
+        }), this.updateContainerSize()
+    }, CanvasRenderer.prototype.updateContainerSize = function() {
+        var t, e;
+        this.animationItem.wrapper && this.animationItem.container ? (t = this.animationItem.wrapper.offsetWidth, e = this.animationItem.wrapper.offsetHeight, this.animationItem.container.setAttribute("width", t * this.renderConfig.dpr), this.animationItem.container.setAttribute("height", e * this.renderConfig.dpr)) : (t = this.canvasContext.canvas.width * this.renderConfig.dpr, e = this.canvasContext.canvas.height * this.renderConfig.dpr);
+        var r, i;
+        if (-1 !== this.renderConfig.preserveAspectRatio.indexOf("meet") || -1 !== this.renderConfig.preserveAspectRatio.indexOf("slice")) {
+            var n = this.renderConfig.preserveAspectRatio.split(" "),
+                s = n[1] || "meet",
+                a = n[0] || "xMidYMid",
+                o = a.substr(0, 4),
+                l = a.substr(4);
+            r = t / e, i = this.transformCanvas.w / this.transformCanvas.h, i > r && "meet" === s || r > i && "slice" === s ? (this.transformCanvas.sx = t / (this.transformCanvas.w / this.renderConfig.dpr), this.transformCanvas.sy = t / (this.transformCanvas.w / this.renderConfig.dpr)) : (this.transformCanvas.sx = e / (this.transformCanvas.h / this.renderConfig.dpr), this.transformCanvas.sy = e / (this.transformCanvas.h / this.renderConfig.dpr)), this.transformCanvas.tx = "xMid" === o && (r > i && "meet" === s || i > r && "slice" === s) ? (t - this.transformCanvas.w * (e / this.transformCanvas.h)) / 2 * this.renderConfig.dpr : "xMax" === o && (r > i && "meet" === s || i > r && "slice" === s) ? (t - this.transformCanvas.w * (e / this.transformCanvas.h)) * this.renderConfig.dpr : 0, this.transformCanvas.ty = "YMid" === l && (i > r && "meet" === s || r > i && "slice" === s) ? (e - this.transformCanvas.h * (t / this.transformCanvas.w)) / 2 * this.renderConfig.dpr : "YMax" === l && (i > r && "meet" === s || r > i && "slice" === s) ? (e - this.transformCanvas.h * (t / this.transformCanvas.w)) * this.renderConfig.dpr : 0
+        } else "none" == this.renderConfig.preserveAspectRatio ? (this.transformCanvas.sx = t / (this.transformCanvas.w / this.renderConfig.dpr), this.transformCanvas.sy = e / (this.transformCanvas.h / this.renderConfig.dpr), this.transformCanvas.tx = 0, this.transformCanvas.ty = 0) : (this.transformCanvas.sx = this.renderConfig.dpr, this.transformCanvas.sy = this.renderConfig.dpr, this.transformCanvas.tx = 0, this.transformCanvas.ty = 0);
+        this.transformCanvas.props = [this.transformCanvas.sx, 0, 0, 0, 0, this.transformCanvas.sy, 0, 0, 0, 0, 1, 0, this.transformCanvas.tx, this.transformCanvas.ty, 0, 1];
+        var h, p = this.elements.length;
+        for (h = 0; p > h; h += 1) this.elements[h] && 0 === this.elements[h].data.ty && this.elements[h].resize(this.globalData.transformCanvas)
+    }, CanvasRenderer.prototype.destroy = function() {
+        this.renderConfig.clearCanvas && (this.animationItem.wrapper.innerHTML = "");
+        var t, e = this.layers ? this.layers.length : 0;
+        for (t = e - 1; t >= 0; t -= 1) this.elements[t].destroy();
+        this.elements.length = 0, this.globalData.canvasContext = null, this.animationItem.container = null, this.destroyed = !0
+    }, CanvasRenderer.prototype.renderFrame = function(t) {
+        if (!(this.renderedFrame == t && this.renderConfig.clearCanvas === !0 || this.destroyed || null === t)) {
+            this.renderedFrame = t, this.globalData.frameNum = t - this.animationItem.firstFrame, this.globalData.frameId += 1, this.globalData.projectInterface.currentFrame = t, this.renderConfig.clearCanvas === !0 ? (this.reset(), this.canvasContext.save(), this.canvasContext.clearRect(this.transformCanvas.tx, this.transformCanvas.ty, this.transformCanvas.w * this.transformCanvas.sx, this.transformCanvas.h * this.transformCanvas.sy)) : this.save(), this.ctxTransform(this.transformCanvas.props), this.canvasContext.beginPath(), this.canvasContext.rect(0, 0, this.transformCanvas.w, this.transformCanvas.h), this.canvasContext.closePath(), this.canvasContext.clip();
+            var e, r = this.layers.length;
+            for (this.completeLayers || this.checkLayers(t), e = 0; r > e; e++)(this.completeLayers || this.elements[e]) && this.elements[e].prepareFrame(t - this.layers[e].st);
+            for (e = r - 1; e >= 0; e -= 1)(this.completeLayers || this.elements[e]) && this.elements[e].renderFrame();
+            this.renderConfig.clearCanvas !== !0 ? this.restore() : this.canvasContext.restore()
+        }
+    }, CanvasRenderer.prototype.buildItem = function(t) {
+        var e = this.elements;
+        if (!e[t] && 99 != this.layers[t].ty) {
+            var r = this.createItem(this.layers[t], this, this.globalData);
+            e[t] = r, r.initExpressions(), 0 === this.layers[t].ty && r.resize(this.globalData.transformCanvas)
+        }
+    }, CanvasRenderer.prototype.checkPendingElements = function() {
+        for (; this.pendingElements.length;) {
+            var t = this.pendingElements.pop();
+            t.checkParenting()
+        }
+    }, CanvasRenderer.prototype.hide = function() {
+        this.animationItem.container.style.display = "none"
+    }, CanvasRenderer.prototype.show = function() {
+        this.animationItem.container.style.display = "block"
+    }, CanvasRenderer.prototype.searchExtraCompositions = function(t) {
+        var e, r = t.length;
+        for (document.createElementNS(svgNS, "g"), e = 0; r > e; e += 1)
+            if (t[e].xt) {
+                var i = this.createComp(t[e], this.globalData.comp, this.globalData);
+                i.initExpressions(), this.globalData.projectInterface.registerComposition(i)
+            }
+    }, extendPrototype(BaseRenderer, HybridRenderer), HybridRenderer.prototype.buildItem = SVGRenderer.prototype.buildItem, HybridRenderer.prototype.checkPendingElements = function() {
         for (; this.pendingElements.length;) {
             var t = this.pendingElements.pop();
             t.checkParenting()
@@ -6970,7 +7326,87 @@ function getCurrentMouth(t, e) {
                 n ? i.ddd && this.supports3d || this.layerElement.insertBefore(r, n) : i.ddd && this.supports3d || this.layerElement.appendChild(r)
             }
         }
-    },  createElement(BaseElement, CVBaseElement), CVBaseElement.prototype.createElements = function() {
+    }, HybridRenderer.prototype.createBase = function(t) {
+        return new SVGBaseElement(t, this.layerElement, this.globalData, this)
+    }, HybridRenderer.prototype.createShape = function(t) {
+        return this.supports3d ? new HShapeElement(t, this.layerElement, this.globalData, this) : new IShapeElement(t, this.layerElement, this.globalData, this)
+    }, HybridRenderer.prototype.createText = function(t) {
+        return this.supports3d ? new HTextElement(t, this.layerElement, this.globalData, this) : new SVGTextElement(t, this.layerElement, this.globalData, this)
+    }, HybridRenderer.prototype.createCamera = function(t) {
+        return this.camera = new HCameraElement(t, this.layerElement, this.globalData, this), this.camera
+    }, HybridRenderer.prototype.createImage = function(t) {
+        return this.supports3d ? new HImageElement(t, this.layerElement, this.globalData, this) : new IImageElement(t, this.layerElement, this.globalData, this)
+    }, HybridRenderer.prototype.createComp = function(t) {
+        return this.supports3d ? new HCompElement(t, this.layerElement, this.globalData, this) : new ICompElement(t, this.layerElement, this.globalData, this)
+    }, HybridRenderer.prototype.createSolid = function(t) {
+        return this.supports3d ? new HSolidElement(t, this.layerElement, this.globalData, this) : new ISolidElement(t, this.layerElement, this.globalData, this)
+    }, HybridRenderer.prototype.getThreeDContainer = function(t) {
+        var e = document.createElement("div");
+        styleDiv(e), e.style.width = this.globalData.compSize.w + "px", e.style.height = this.globalData.compSize.h + "px", e.style.transformOrigin = e.style.mozTransformOrigin = e.style.webkitTransformOrigin = "50% 50%";
+        var r = document.createElement("div");
+        styleDiv(r), r.style.transform = r.style.webkitTransform = "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)", e.appendChild(r), this.resizerElem.appendChild(e);
+        var i = {
+            container: r,
+            perspectiveElem: e,
+            startPos: t,
+            endPos: t
+        };
+        return this.threeDElements.push(i), i
+    }, HybridRenderer.prototype.build3dContainers = function() {
+        var t, e, r = this.layers.length;
+        for (t = 0; r > t; t += 1) this.layers[t].ddd ? (e || (e = this.getThreeDContainer(t)), e.endPos = Math.max(e.endPos, t)) : e = null
+    }, HybridRenderer.prototype.addTo3dContainer = function(t, e) {
+        for (var r = 0, i = this.threeDElements.length; i > r;) {
+            if (e <= this.threeDElements[r].endPos) {
+                for (var n, s = this.threeDElements[r].startPos; e > s;) this.elements[s] && this.elements[s].getBaseElement && (n = this.elements[s].getBaseElement()), s += 1;
+                n ? this.threeDElements[r].container.insertBefore(t, n) : this.threeDElements[r].container.appendChild(t);
+                break
+            }
+            r += 1
+        }
+    }, HybridRenderer.prototype.configAnimation = function(t) {
+        var e = document.createElement("div"),
+            r = this.animationItem.wrapper;
+        e.style.width = t.w + "px", e.style.height = t.h + "px", this.resizerElem = e, styleDiv(e), e.style.transformStyle = e.style.webkitTransformStyle = e.style.mozTransformStyle = "flat", r.appendChild(e);
+        var i = document.createElementNS(svgNS, "svg");
+        i.setAttribute("width", "1"), i.setAttribute("height", "1"), styleDiv(i), this.resizerElem.appendChild(i);
+        var n = document.createElementNS(svgNS, "defs");
+        i.appendChild(n), this.globalData.defs = n, this.data = t, this.globalData.getAssetData = this.animationItem.getAssetData.bind(this.animationItem), this.globalData.getAssetsPath = this.animationItem.getAssetsPath.bind(this.animationItem), this.globalData.elementLoaded = this.animationItem.elementLoaded.bind(this.animationItem), this.globalData.frameId = 0, this.globalData.compSize = {
+            w: t.w,
+            h: t.h
+        }, this.globalData.frameRate = t.fr, this.layers = t.layers, this.globalData.fontManager = new FontManager, this.globalData.fontManager.addChars(t.chars), this.globalData.fontManager.addFonts(t.fonts, i), this.layerElement = this.resizerElem, this.build3dContainers(), this.updateContainerSize()
+    }, HybridRenderer.prototype.destroy = function() {
+        this.animationItem.wrapper.innerHTML = "", this.animationItem.container = null, this.globalData.defs = null;
+        var t, e = this.layers ? this.layers.length : 0;
+        for (t = 0; e > t; t++) this.elements[t].destroy();
+        this.elements.length = 0, this.destroyed = !0, this.animationItem = null
+    }, HybridRenderer.prototype.updateContainerSize = function() {
+        var t, e, r, i, n = this.animationItem.wrapper.offsetWidth,
+            s = this.animationItem.wrapper.offsetHeight,
+            a = n / s,
+            o = this.globalData.compSize.w / this.globalData.compSize.h;
+        o > a ? (t = n / this.globalData.compSize.w, e = n / this.globalData.compSize.w, r = 0, i = (s - this.globalData.compSize.h * (n / this.globalData.compSize.w)) / 2) : (t = s / this.globalData.compSize.h, e = s / this.globalData.compSize.h, r = (n - this.globalData.compSize.w * (s / this.globalData.compSize.h)) / 2, i = 0), this.resizerElem.style.transform = this.resizerElem.style.webkitTransform = "matrix3d(" + t + ",0,0,0,0," + e + ",0,0,0,0,1,0," + r + "," + i + ",0,1)"
+    }, HybridRenderer.prototype.renderFrame = SVGRenderer.prototype.renderFrame, HybridRenderer.prototype.hide = function() {
+        this.resizerElem.style.display = "none"
+    }, HybridRenderer.prototype.show = function() {
+        this.resizerElem.style.display = "block"
+    }, HybridRenderer.prototype.initItems = function() {
+        if (this.buildAllItems(), this.camera) this.camera.setup();
+        else {
+            var t, e = this.globalData.compSize.w,
+                r = this.globalData.compSize.h,
+                i = this.threeDElements.length;
+            for (t = 0; i > t; t += 1) this.threeDElements[t].perspectiveElem.style.perspective = this.threeDElements[t].perspectiveElem.style.webkitPerspective = Math.sqrt(Math.pow(e, 2) + Math.pow(r, 2)) + "px"
+        }
+    }, HybridRenderer.prototype.searchExtraCompositions = function(t) {
+        var e, r = t.length,
+            i = document.createElement("div");
+        for (e = 0; r > e; e += 1)
+            if (t[e].xt) {
+                var n = this.createComp(t[e], i, this.globalData.comp, null);
+                n.initExpressions(), this.globalData.projectInterface.registerComposition(n)
+            }
+    }, createElement(BaseElement, CVBaseElement), CVBaseElement.prototype.createElements = function() {
         this.checkParenting()
     }, CVBaseElement.prototype.checkBlendMode = function(t) {
         if (t.blendMode !== this.data.bm) {
@@ -7027,6 +7463,482 @@ function getCurrentMouth(t, e) {
             }
             t.canvasContext.globalCompositeOperation = e
         }
+    }, CVBaseElement.prototype.renderFrame = function(t) {
+        if (3 === this.data.ty) return !1;
+        if (this.checkBlendMode(0 === this.data.ty ? this.parentGlobalData : this.globalData), !this.isVisible) return this.isVisible;
+        this.finalTransform.opMdf = this.finalTransform.op.mdf, this.finalTransform.matMdf = this.finalTransform.mProp.mdf, this.finalTransform.opacity = this.finalTransform.op.v;
+        var e, r = this.finalTransform.mat;
+        if (this.hierarchy) {
+            var i, n = this.hierarchy.length;
+            for (e = this.finalTransform.mProp.v.props, r.cloneFromProps(e), i = 0; n > i; i += 1) this.finalTransform.matMdf = this.hierarchy[i].finalTransform.mProp.mdf ? !0 : this.finalTransform.matMdf, e = this.hierarchy[i].finalTransform.mProp.v.props, r.transform(e[0], e[1], e[2], e[3], e[4], e[5], e[6], e[7], e[8], e[9], e[10], e[11], e[12], e[13], e[14], e[15])
+        } else t ? (e = this.finalTransform.mProp.v.props, r.cloneFromProps(e)) : r.cloneFromProps(this.finalTransform.mProp.v.props);
+        return t && (e = t.mat.props, r.transform(e[0], e[1], e[2], e[3], e[4], e[5], e[6], e[7], e[8], e[9], e[10], e[11], e[12], e[13], e[14], e[15]), this.finalTransform.opacity *= t.opacity, this.finalTransform.opMdf = t.opMdf ? !0 : this.finalTransform.opMdf, this.finalTransform.matMdf = t.matMdf ? !0 : this.finalTransform.matMdf), this.data.hasMask && (this.globalData.renderer.save(!0), this.maskManager.renderFrame(0 === this.data.ty ? null : r)), this.data.hd && (this.isVisible = !1), this.isVisible
+    }, CVBaseElement.prototype.addMasks = function(t) {
+        this.maskManager = new CVMaskElement(t, this, this.globalData)
+    }, CVBaseElement.prototype.destroy = function() {
+        this.canvasContext = null, this.data = null, this.globalData = null, this.maskManager && this.maskManager.destroy()
+    }, CVBaseElement.prototype.mHelper = new Matrix, createElement(CVBaseElement, CVCompElement), CVCompElement.prototype.ctxTransform = CanvasRenderer.prototype.ctxTransform, CVCompElement.prototype.ctxOpacity = CanvasRenderer.prototype.ctxOpacity, CVCompElement.prototype.save = CanvasRenderer.prototype.save, CVCompElement.prototype.restore = CanvasRenderer.prototype.restore, CVCompElement.prototype.reset = function() {
+        this.contextData.cArrPos = 0, this.contextData.cTr.reset(), this.contextData.cO = 1
+    }, CVCompElement.prototype.resize = function(t) {
+        var e = Math.max(t.sx, t.sy);
+        this.canvas.width = this.data.w * e, this.canvas.height = this.data.h * e, this.transformCanvas = {
+            sc: e,
+            w: this.data.w * e,
+            h: this.data.h * e,
+            props: [e, 0, 0, 0, 0, e, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+        };
+        var r, i = this.elements.length;
+        for (r = 0; i > r; r += 1) this.elements[r] && 0 === this.elements[r].data.ty && this.elements[r].resize(t)
+    }, CVCompElement.prototype.prepareFrame = function(t) {
+        if (this.globalData.frameId = this.parentGlobalData.frameId, this.globalData.mdf = !1, this._parent.prepareFrame.call(this, t), this.isVisible !== !1 || this.data.xt) {
+            var e = t;
+            this.tm && (e = this.tm.v, e === this.data.op && (e = this.data.op - 1)), this.renderedFrame = e / this.data.sr;
+            var r, i = this.elements.length;
+            for (this.completeLayers || this.checkLayers(t), r = 0; i > r; r += 1)(this.completeLayers || this.elements[r]) && (this.elements[r].prepareFrame(e / this.data.sr - this.layers[r].st), 0 === this.elements[r].data.ty && this.elements[r].globalData.mdf && (this.globalData.mdf = !0));
+            this.globalData.mdf && !this.data.xt && (this.canvasContext.clearRect(0, 0, this.data.w, this.data.h), this.ctxTransform(this.transformCanvas.props))
+        }
+    }, CVCompElement.prototype.renderFrame = function(t) {
+        if (this._parent.renderFrame.call(this, t) !== !1) {
+            if (this.globalData.mdf) {
+                var e, r = this.layers.length;
+                for (e = r - 1; e >= 0; e -= 1)(this.completeLayers || this.elements[e]) && this.elements[e].renderFrame()
+            }
+            this.data.hasMask && this.globalData.renderer.restore(!0), this.firstFrame && (this.firstFrame = !1), this.parentGlobalData.renderer.save(), this.parentGlobalData.renderer.ctxTransform(this.finalTransform.mat.props), this.parentGlobalData.renderer.ctxOpacity(this.finalTransform.opacity), this.parentGlobalData.renderer.canvasContext.drawImage(this.canvas, 0, 0, this.data.w, this.data.h), this.parentGlobalData.renderer.restore(), this.globalData.mdf && this.reset()
+        }
+    }, CVCompElement.prototype.setElements = function(t) {
+        this.elements = t
+    }, CVCompElement.prototype.getElements = function() {
+        return this.elements
+    }, CVCompElement.prototype.destroy = function() {
+        var t, e = this.layers.length;
+        for (t = e - 1; t >= 0; t -= 1) this.elements[t].destroy();
+        this.layers = null, this.elements = null, this._parent.destroy.call(this._parent)
+    }, CVCompElement.prototype.checkLayers = CanvasRenderer.prototype.checkLayers, CVCompElement.prototype.buildItem = CanvasRenderer.prototype.buildItem, CVCompElement.prototype.checkPendingElements = CanvasRenderer.prototype.checkPendingElements, CVCompElement.prototype.addPendingElement = CanvasRenderer.prototype.addPendingElement, CVCompElement.prototype.buildAllItems = CanvasRenderer.prototype.buildAllItems, CVCompElement.prototype.createItem = CanvasRenderer.prototype.createItem, CVCompElement.prototype.createImage = CanvasRenderer.prototype.createImage, CVCompElement.prototype.createComp = CanvasRenderer.prototype.createComp, CVCompElement.prototype.createSolid = CanvasRenderer.prototype.createSolid, CVCompElement.prototype.createShape = CanvasRenderer.prototype.createShape, CVCompElement.prototype.createText = CanvasRenderer.prototype.createText, CVCompElement.prototype.createBase = CanvasRenderer.prototype.createBase, CVCompElement.prototype.buildElementParenting = CanvasRenderer.prototype.buildElementParenting, createElement(CVBaseElement, CVImageElement), CVImageElement.prototype.createElements = function() {
+        var t = function() {
+                if (this.globalData.elementLoaded(), this.assetData.w !== this.img.width || this.assetData.h !== this.img.height) {
+                    var t = document.createElement("canvas");
+                    t.width = this.assetData.w, t.height = this.assetData.h;
+                    var e, r, i = t.getContext("2d"),
+                        n = this.img.width,
+                        s = this.img.height,
+                        a = n / s,
+                        o = this.assetData.w / this.assetData.h;
+                    a > o ? (r = s, e = r * o) : (e = n, r = e / o), i.drawImage(this.img, (n - e) / 2, (s - r) / 2, e, r, 0, 0, this.assetData.w, this.assetData.h), this.img = t
+                }
+            }.bind(this),
+            e = function() {
+                this.failed = !0, this.globalData.elementLoaded()
+            }.bind(this);
+        this.img = new Image, this.img.addEventListener("load", t, !1), this.img.addEventListener("error", e, !1);
+        var r = this.globalData.getAssetsPath(this.assetData);
+        this.img.src = r, this._parent.createElements.call(this)
+    }, CVImageElement.prototype.renderFrame = function(t) {
+        if (!this.failed && this._parent.renderFrame.call(this, t) !== !1) {
+            var e = this.canvasContext;
+            this.globalData.renderer.save();
+            var r = this.finalTransform.mat.props;
+            this.globalData.renderer.ctxTransform(r), this.globalData.renderer.ctxOpacity(this.finalTransform.opacity), e.drawImage(this.img, 0, 0), this.globalData.renderer.restore(this.data.hasMask), this.firstFrame && (this.firstFrame = !1)
+        }
+    }, CVImageElement.prototype.destroy = function() {
+        this.img = null, this._parent.destroy.call(this._parent)
+    }, CVMaskElement.prototype.getMaskProperty = function(t) {
+        return this.viewData[t]
+    }, CVMaskElement.prototype.prepareFrame = function(t) {
+        var e, r = this.dynamicProperties.length;
+        for (e = 0; r > e; e += 1) this.dynamicProperties[e].getValue(t), this.dynamicProperties[e].mdf && (this.element.globalData.mdf = !0)
+    }, CVMaskElement.prototype.renderFrame = function(t) {
+        var e, r, i, n, s, a = this.element.canvasContext,
+            o = this.data.masksProperties.length,
+            l = !1;
+        for (e = 0; o > e; e++)
+            if ("n" !== this.masksProperties[e].mode) {
+                l === !1 && (a.beginPath(), l = !0), this.masksProperties[e].inv && (a.moveTo(0, 0), a.lineTo(this.element.globalData.compWidth, 0), a.lineTo(this.element.globalData.compWidth, this.element.globalData.compHeight), a.lineTo(0, this.element.globalData.compHeight), a.lineTo(0, 0)), s = this.viewData[e].v, r = t ? t.applyToPointArray(s.v[0][0], s.v[0][1], 0) : s.v[0], a.moveTo(r[0], r[1]);
+                var h, p = s._length;
+                for (h = 1; p > h; h++) r = t ? t.applyToPointArray(s.o[h - 1][0], s.o[h - 1][1], 0) : s.o[h - 1], i = t ? t.applyToPointArray(s.i[h][0], s.i[h][1], 0) : s.i[h], n = t ? t.applyToPointArray(s.v[h][0], s.v[h][1], 0) : s.v[h], a.bezierCurveTo(r[0], r[1], i[0], i[1], n[0], n[1]);
+                r = t ? t.applyToPointArray(s.o[h - 1][0], s.o[h - 1][1], 0) : s.o[h - 1], i = t ? t.applyToPointArray(s.i[0][0], s.i[0][1], 0) : s.i[0], n = t ? t.applyToPointArray(s.v[0][0], s.v[0][1], 0) : s.v[0], a.bezierCurveTo(r[0], r[1], i[0], i[1], n[0], n[1])
+            } l && a.clip()
+    }, CVMaskElement.prototype.getMask = function(t) {
+        for (var e = 0, r = this.masksProperties.length; r > e;) {
+            if (this.masksProperties[e].nm === t) return {
+                maskPath: this.viewData[e].pv
+            };
+            e += 1
+        }
+    }, CVMaskElement.prototype.destroy = function() {
+        this.element = null
+    }, createElement(CVBaseElement, CVShapeElement), CVShapeElement.prototype.lcEnum = {
+        1: "butt",
+        2: "round",
+        3: "butt"
+    }, CVShapeElement.prototype.ljEnum = {
+        1: "miter",
+        2: "round",
+        3: "butt"
+    }, CVShapeElement.prototype.transformHelper = {
+        opacity: 1,
+        mat: new Matrix,
+        matMdf: !1,
+        opMdf: !1
+    }, CVShapeElement.prototype.dashResetter = [], CVShapeElement.prototype.createElements = function() {
+        this._parent.createElements.call(this), this.searchShapes(this.shapesData, this.viewData, this.dynamicProperties)
+    }, CVShapeElement.prototype.searchShapes = function(t, e, r) {
+        var i, n, s, a, o = t.length - 1,
+            l = [],
+            h = [];
+        for (i = o; i >= 0; i -= 1)
+            if ("fl" == t[i].ty || "st" == t[i].ty) {
+                if (a = {
+                        type: t[i].ty,
+                        elements: []
+                    }, e[i] = {}, ("fl" == t[i].ty || "st" == t[i].ty) && (e[i].c = PropertyFactory.getProp(this, t[i].c, 1, 255, r), e[i].c.k || (a.co = "rgb(" + bm_floor(e[i].c.v[0]) + "," + bm_floor(e[i].c.v[1]) + "," + bm_floor(e[i].c.v[2]) + ")")), e[i].o = PropertyFactory.getProp(this, t[i].o, 0, .01, r), "st" == t[i].ty) {
+                    if (a.lc = this.lcEnum[t[i].lc] || "round", a.lj = this.ljEnum[t[i].lj] || "round", 1 == t[i].lj && (a.ml = t[i].ml), e[i].w = PropertyFactory.getProp(this, t[i].w, 0, null, r), e[i].w.k || (a.wi = e[i].w.v), t[i].d) {
+                        var p = PropertyFactory.getDashProp(this, t[i].d, "canvas", r);
+                        e[i].d = p, e[i].d.k || (a.da = e[i].d.dasharray, a["do"] = e[i].d.dashoffset)
+                    }
+                } else a.r = 2 === t[i].r ? "evenodd" : "nonzero";
+                this.stylesList.push(a), e[i].style = a, l.push(e[i].style)
+            } else if ("gr" == t[i].ty) e[i] = {
+            it: []
+        }, this.searchShapes(t[i].it, e[i].it, r);
+        else if ("tr" == t[i].ty) e[i] = {
+            transform: {
+                mat: new Matrix,
+                opacity: 1,
+                matMdf: !1,
+                opMdf: !1,
+                op: PropertyFactory.getProp(this, t[i].o, 0, .01, r),
+                mProps: PropertyFactory.getProp(this, t[i], 2, null, r)
+            },
+            elements: []
+        };
+        else if ("sh" == t[i].ty || "rc" == t[i].ty || "el" == t[i].ty || "sr" == t[i].ty) {
+            e[i] = {
+                nodes: [],
+                trNodes: [],
+                tr: [0, 0, 0, 0, 0, 0]
+            };
+            var c = 4;
+            "rc" == t[i].ty ? c = 5 : "el" == t[i].ty ? c = 6 : "sr" == t[i].ty && (c = 7), e[i].sh = ShapePropertyFactory.getShapeProp(this, t[i], c, r), this.shapes.push(e[i].sh), this.addShapeToModifiers(e[i]), s = this.stylesList.length;
+            var f = !1,
+                u = !1;
+            for (n = 0; s > n; n += 1) this.stylesList[n].closed || (this.stylesList[n].elements.push(e[i]), "st" === this.stylesList[n].type ? f = !0 : u = !0);
+            e[i].st = f, e[i].fl = u
+        } else if ("tm" == t[i].ty || "rd" == t[i].ty || "rp" == t[i].ty) {
+            var d = ShapeModifiers.getModifier(t[i].ty);
+            d.init(this, t[i], r), this.shapeModifiers.push(d), h.push(d), e[i] = d
+        }
+        for (o = l.length, i = 0; o > i; i += 1) l[i].closed = !0;
+        for (o = h.length, i = 0; o > i; i += 1) h[i].closed = !0
+    }, CVShapeElement.prototype.addShapeToModifiers = IShapeElement.prototype.addShapeToModifiers, CVShapeElement.prototype.renderModifiers = IShapeElement.prototype.renderModifiers, CVShapeElement.prototype.renderFrame = function(t) {
+        this._parent.renderFrame.call(this, t) !== !1 && (this.transformHelper.mat.reset(), this.transformHelper.opacity = this.finalTransform.opacity, this.transformHelper.matMdf = !1, this.transformHelper.opMdf = this.finalTransform.opMdf, this.renderModifiers(), this.renderShape(this.transformHelper, null, null, !0), this.data.hasMask && this.globalData.renderer.restore(!0))
+    }, CVShapeElement.prototype.renderShape = function(t, e, r, i) {
+        var n, s;
+        if (!e)
+            for (e = this.shapesData, s = this.stylesList.length, n = 0; s > n; n += 1) this.stylesList[n].d = "", this.stylesList[n].mdf = !1;
+        r || (r = this.viewData), s = e.length - 1;
+        var a, o;
+        for (a = t, n = s; n >= 0; n -= 1)
+            if ("tr" == e[n].ty) {
+                a = r[n].transform;
+                var l = r[n].transform.mProps.v.props;
+                if (a.matMdf = a.mProps.mdf, a.opMdf = a.op.mdf, o = a.mat, o.cloneFromProps(l), t) {
+                    var h = t.mat.props;
+                    a.opacity = t.opacity, a.opacity *= r[n].transform.op.v, a.matMdf = t.matMdf ? !0 : a.matMdf, a.opMdf = t.opMdf ? !0 : a.opMdf, o.transform(h[0], h[1], h[2], h[3], h[4], h[5], h[6], h[7], h[8], h[9], h[10], h[11], h[12], h[13], h[14], h[15])
+                } else a.opacity = a.op.o
+            } else "sh" == e[n].ty || "el" == e[n].ty || "rc" == e[n].ty || "sr" == e[n].ty ? this.renderPath(e[n], r[n], a) : "fl" == e[n].ty ? this.renderFill(e[n], r[n], a) : "st" == e[n].ty ? this.renderStroke(e[n], r[n], a) : "gr" == e[n].ty ? this.renderShape(a, e[n].it, r[n].it) : "tm" == e[n].ty;
+        if (i) {
+            s = this.stylesList.length;
+            var p, c, f, u, d, m, y, g = this.globalData.renderer,
+                v = this.globalData.canvasContext;
+            for (g.save(), g.ctxTransform(this.finalTransform.mat.props), n = 0; s > n; n += 1)
+                if (y = this.stylesList[n].type, "st" !== y || 0 !== this.stylesList[n].wi) {
+                    for (g.save(), d = this.stylesList[n].elements, "st" === y ? (v.strokeStyle = this.stylesList[n].co, v.lineWidth = this.stylesList[n].wi, v.lineCap = this.stylesList[n].lc, v.lineJoin = this.stylesList[n].lj, v.miterLimit = this.stylesList[n].ml || 0) : v.fillStyle = this.stylesList[n].co, g.ctxOpacity(this.stylesList[n].coOp), "st" !== y && v.beginPath(), c = d.length, p = 0; c > p; p += 1) {
+                        for ("st" === y && (v.beginPath(), this.stylesList[n].da ? (v.setLineDash(this.stylesList[n].da), v.lineDashOffset = this.stylesList[n]["do"], this.globalData.isDashed = !0) : this.globalData.isDashed && (v.setLineDash(this.dashResetter), this.globalData.isDashed = !1)), m = d[p].trNodes, u = m.length, f = 0; u > f; f += 1) "m" == m[f].t ? v.moveTo(m[f].p[0], m[f].p[1]) : "c" == m[f].t ? v.bezierCurveTo(m[f].p1[0], m[f].p1[1], m[f].p2[0], m[f].p2[1], m[f].p3[0], m[f].p3[1]) : v.closePath();
+                        "st" === y && v.stroke()
+                    }
+                    "st" !== y && v.fill(this.stylesList[n].r), g.restore()
+                } g.restore(), this.firstFrame && (this.firstFrame = !1)
+        }
+    }, CVShapeElement.prototype.renderPath = function(t, e, r) {
+        var i, n, s, a, o = r.matMdf || e.sh.mdf || this.firstFrame;
+        if (o) {
+            var l = e.sh.paths;
+            a = l._length;
+            var h = e.trNodes;
+            for (h.length = 0, s = 0; a > s; s += 1) {
+                var p = l.shapes[s];
+                if (p && p.v) {
+                    for (i = p._length, n = 1; i > n; n += 1) 1 == n && h.push({
+                        t: "m",
+                        p: r.mat.applyToPointArray(p.v[0][0], p.v[0][1], 0)
+                    }), h.push({
+                        t: "c",
+                        p1: r.mat.applyToPointArray(p.o[n - 1][0], p.o[n - 1][1], 0),
+                        p2: r.mat.applyToPointArray(p.i[n][0], p.i[n][1], 0),
+                        p3: r.mat.applyToPointArray(p.v[n][0], p.v[n][1], 0)
+                    });
+                    1 == i && h.push({
+                        t: "m",
+                        p: r.mat.applyToPointArray(p.v[0][0], p.v[0][1], 0)
+                    }), p.c && i && (h.push({
+                        t: "c",
+                        p1: r.mat.applyToPointArray(p.o[n - 1][0], p.o[n - 1][1], 0),
+                        p2: r.mat.applyToPointArray(p.i[0][0], p.i[0][1], 0),
+                        p3: r.mat.applyToPointArray(p.v[0][0], p.v[0][1], 0)
+                    }), h.push({
+                        t: "z"
+                    })), e.lStr = h
+                }
+            }
+            if (e.st)
+                for (n = 0; 16 > n; n += 1) e.tr[n] = r.mat.props[n];
+            e.trNodes = h
+        }
+    }, CVShapeElement.prototype.renderFill = function(t, e, r) {
+        var i = e.style;
+        (e.c.mdf || this.firstFrame) && (i.co = "rgb(" + bm_floor(e.c.v[0]) + "," + bm_floor(e.c.v[1]) + "," + bm_floor(e.c.v[2]) + ")"), (e.o.mdf || r.opMdf || this.firstFrame) && (i.coOp = e.o.v * r.opacity)
+    }, CVShapeElement.prototype.renderStroke = function(t, e, r) {
+        var i = e.style,
+            n = e.d;
+        n && (n.mdf || this.firstFrame) && (i.da = n.dasharray, i["do"] = n.dashoffset), (e.c.mdf || this.firstFrame) && (i.co = "rgb(" + bm_floor(e.c.v[0]) + "," + bm_floor(e.c.v[1]) + "," + bm_floor(e.c.v[2]) + ")"), (e.o.mdf || r.opMdf || this.firstFrame) && (i.coOp = e.o.v * r.opacity), (e.w.mdf || this.firstFrame) && (i.wi = e.w.v)
+    }, CVShapeElement.prototype.destroy = function() {
+        this.shapesData = null, this.globalData = null, this.canvasContext = null, this.stylesList.length = 0, this.viewData.length = 0, this._parent.destroy.call(this._parent)
+    }, createElement(CVBaseElement, CVSolidElement), CVSolidElement.prototype.renderFrame = function(t) {
+        if (this._parent.renderFrame.call(this, t) !== !1) {
+            var e = this.canvasContext;
+            this.globalData.renderer.save(), this.globalData.renderer.ctxTransform(this.finalTransform.mat.props), this.globalData.renderer.ctxOpacity(this.finalTransform.opacity), e.fillStyle = this.data.sc, e.fillRect(0, 0, this.data.sw, this.data.sh), this.globalData.renderer.restore(this.data.hasMask), this.firstFrame && (this.firstFrame = !1)
+        }
+    }, createElement(CVBaseElement, CVTextElement), CVTextElement.prototype.init = ITextElement.prototype.init, CVTextElement.prototype.getMeasures = ITextElement.prototype.getMeasures, CVTextElement.prototype.getMult = ITextElement.prototype.getMult, CVTextElement.prototype.prepareFrame = ITextElement.prototype.prepareFrame, CVTextElement.prototype.tHelper = document.createElement("canvas").getContext("2d"), CVTextElement.prototype.createElements = function() {
+        this._parent.createElements.call(this)
+    }, CVTextElement.prototype.buildNewText = function() {
+        var t = this.currentTextDocumentData;
+        this.renderedLetters = Array.apply(null, {
+            length: this.currentTextDocumentData.l ? this.currentTextDocumentData.l.length : 0
+        });
+        var e = !1;
+        t.fc ? (e = !0, this.values.fill = "rgb(" + Math.round(255 * t.fc[0]) + "," + Math.round(255 * t.fc[1]) + "," + Math.round(255 * t.fc[2]) + ")") : this.values.fill = "rgba(0,0,0,0)", this.fill = e;
+        var r = !1;
+        t.sc && (r = !0, this.values.stroke = "rgb(" + Math.round(255 * t.sc[0]) + "," + Math.round(255 * t.sc[1]) + "," + Math.round(255 * t.sc[2]) + ")", this.values.sWidth = t.sw);
+        var i, n, s = this.globalData.fontManager.getFontByName(t.f),
+            a = t.l,
+            o = this.mHelper;
+        this.stroke = r, this.values.fValue = t.s + "px " + this.globalData.fontManager.getFontByName(t.f).fFamily, n = t.t.length, this.tHelper.font = this.values.fValue;
+        var l, h, p, c, f, u, d, m, y, g, v = this.data.singleShape;
+        if (v) var b = 0,
+            x = 0,
+            E = t.lineWidths,
+            w = t.boxWidth,
+            P = !0;
+        var S = 0;
+        for (i = 0; n > i; i += 1) {
+            l = this.globalData.fontManager.getCharData(t.t.charAt(i), s.fStyle, this.globalData.fontManager.getFontByName(t.f).fFamily);
+            var h;
+            if (h = l ? l.data : null, o.reset(), v && a[i].n && (b = 0, x += t.yOffset, x += P ? 1 : 0, P = !1), h && h.shapes) {
+                if (f = h.shapes[0].it, d = f.length, o.scale(t.s / 100, t.s / 100), v) {
+                    switch (t.ps && o.translate(t.ps[0], t.ps[1] + t.ascent, 0), o.translate(0, -t.ls, 0), t.j) {
+                        case 1:
+                            o.translate(t.justifyOffset + (w - E[a[i].line]), 0, 0);
+                            break;
+                        case 2:
+                            o.translate(t.justifyOffset + (w - E[a[i].line]) / 2, 0, 0)
+                    }
+                    o.translate(b, x, 0)
+                }
+                for (y = new Array(d), u = 0; d > u; u += 1) {
+                    for (c = f[u].ks.k.i.length, m = f[u].ks.k, g = [], p = 1; c > p; p += 1) 1 == p && g.push(o.applyToX(m.v[0][0], m.v[0][1], 0), o.applyToY(m.v[0][0], m.v[0][1], 0)), g.push(o.applyToX(m.o[p - 1][0], m.o[p - 1][1], 0), o.applyToY(m.o[p - 1][0], m.o[p - 1][1], 0), o.applyToX(m.i[p][0], m.i[p][1], 0), o.applyToY(m.i[p][0], m.i[p][1], 0), o.applyToX(m.v[p][0], m.v[p][1], 0), o.applyToY(m.v[p][0], m.v[p][1], 0));
+                    g.push(o.applyToX(m.o[p - 1][0], m.o[p - 1][1], 0), o.applyToY(m.o[p - 1][0], m.o[p - 1][1], 0), o.applyToX(m.i[0][0], m.i[0][1], 0), o.applyToY(m.i[0][0], m.i[0][1], 0), o.applyToX(m.v[0][0], m.v[0][1], 0), o.applyToY(m.v[0][0], m.v[0][1], 0)), y[u] = g
+                }
+            } else y = [];
+            v && (b += a[i].l), this.textSpans[S] ? this.textSpans[S].elem = y : this.textSpans[S] = {
+                elem: y
+            }, S += 1
+        }
+    }, CVTextElement.prototype.renderFrame = function(t) {
+        if (this._parent.renderFrame.call(this, t) !== !1) {
+            var e = this.canvasContext,
+                r = this.finalTransform.mat.props;
+            this.globalData.renderer.save(), this.globalData.renderer.ctxTransform(r), this.globalData.renderer.ctxOpacity(this.finalTransform.opacity), e.font = this.values.fValue, e.lineCap = "butt", e.lineJoin = "miter", e.miterLimit = 4, this.data.singleShape || this.getMeasures();
+            var i, n, s, a, o, l, h = this.renderedLetters,
+                p = this.currentTextDocumentData.l;
+            n = p.length;
+            var c, f, u, d = null,
+                m = null,
+                y = null;
+            for (i = 0; n > i; i += 1)
+                if (!p[i].n) {
+                    if (c = h[i], c && (this.globalData.renderer.save(), this.globalData.renderer.ctxTransform(c.props), this.globalData.renderer.ctxOpacity(c.o)), this.fill) {
+                        for (c && c.fc ? d !== c.fc && (d = c.fc, e.fillStyle = c.fc) : d !== this.values.fill && (d = this.values.fill, e.fillStyle = this.values.fill), f = this.textSpans[i].elem, a = f.length, this.globalData.canvasContext.beginPath(), s = 0; a > s; s += 1)
+                            for (u = f[s], l = u.length, this.globalData.canvasContext.moveTo(u[0], u[1]), o = 2; l > o; o += 6) this.globalData.canvasContext.bezierCurveTo(u[o], u[o + 1], u[o + 2], u[o + 3], u[o + 4], u[o + 5]);
+                        this.globalData.canvasContext.closePath(), this.globalData.canvasContext.fill()
+                    }
+                    if (this.stroke) {
+                        for (c && c.sw ? y !== c.sw && (y = c.sw, e.lineWidth = c.sw) : y !== this.values.sWidth && (y = this.values.sWidth, e.lineWidth = this.values.sWidth), c && c.sc ? m !== c.sc && (m = c.sc, e.strokeStyle = c.sc) : m !== this.values.stroke && (m = this.values.stroke, e.strokeStyle = this.values.stroke), f = this.textSpans[i].elem, a = f.length, this.globalData.canvasContext.beginPath(), s = 0; a > s; s += 1)
+                            for (u = f[s], l = u.length, this.globalData.canvasContext.moveTo(u[0], u[1]), o = 2; l > o; o += 6) this.globalData.canvasContext.bezierCurveTo(u[o], u[o + 1], u[o + 2], u[o + 3], u[o + 4], u[o + 5]);
+                        this.globalData.canvasContext.closePath(), this.globalData.canvasContext.stroke()
+                    }
+                    c && this.globalData.renderer.restore()
+                } this.globalData.renderer.restore(this.data.hasMask), this.firstFrame && (this.firstFrame = !1)
+        }
+    }, createElement(BaseElement, HBaseElement), HBaseElement.prototype.checkBlendMode = function() {}, HBaseElement.prototype.setBlendMode = BaseElement.prototype.setBlendMode, HBaseElement.prototype.getBaseElement = function() {
+        return this.baseElement
+    }, HBaseElement.prototype.createElements = function() {
+        this.data.hasMask ? (this.layerElement = document.createElementNS(svgNS, "svg"), styleDiv(this.layerElement), this.baseElement = this.layerElement, this.maskedElement = this.layerElement) : this.layerElement = this.parentContainer, this.transformedElement = this.layerElement, !this.data.ln || 4 !== this.data.ty && 0 !== this.data.ty || (this.layerElement === this.parentContainer && (this.layerElement = document.createElementNS(svgNS, "g"), this.baseElement = this.layerElement), this.layerElement.setAttribute("id", this.data.ln)), this.setBlendMode(), this.layerElement !== this.parentContainer && (this.placeholder = null), this.checkParenting()
+    }, HBaseElement.prototype.renderFrame = function(t) {
+        if (3 === this.data.ty) return !1;
+        if (this.currentFrameNum === this.lastNum || !this.isVisible) return this.isVisible;
+        this.lastNum = this.currentFrameNum, this.finalTransform.opMdf = this.finalTransform.op.mdf, this.finalTransform.matMdf = this.finalTransform.mProp.mdf, this.finalTransform.opacity = this.finalTransform.op.v, this.firstFrame && (this.finalTransform.opMdf = !0, this.finalTransform.matMdf = !0);
+        var e, r = this.finalTransform.mat;
+        if (this.hierarchy) {
+            var i, n = this.hierarchy.length;
+            for (e = this.finalTransform.mProp.v.props, r.cloneFromProps(e), i = 0; n > i; i += 1) this.finalTransform.matMdf = this.hierarchy[i].finalTransform.mProp.mdf ? !0 : this.finalTransform.matMdf, e = this.hierarchy[i].finalTransform.mProp.v.props, r.transform(e[0], e[1], e[2], e[3], e[4], e[5], e[6], e[7], e[8], e[9], e[10], e[11], e[12], e[13], e[14], e[15])
+        } else this.isVisible && this.finalTransform.matMdf && (t ? (e = this.finalTransform.mProp.v.props, r.cloneFromProps(e)) : r.cloneFromProps(this.finalTransform.mProp.v.props));
+        return this.data.hasMask && this.maskManager.renderFrame(r), t && (e = t.mat.props, r.cloneFromProps(e), this.finalTransform.opacity *= t.opacity, this.finalTransform.opMdf = t.opMdf ? !0 : this.finalTransform.opMdf, this.finalTransform.matMdf = t.matMdf ? !0 : this.finalTransform.matMdf), this.finalTransform.matMdf && (this.transformedElement.style.transform = this.transformedElement.style.webkitTransform = r.toCSS(), this.finalMat = r), this.finalTransform.opMdf && (this.transformedElement.style.opacity = this.finalTransform.opacity), this.isVisible
+    }, HBaseElement.prototype.destroy = function() {
+        this.layerElement = null, this.transformedElement = null, this.parentContainer = null, this.matteElement && (this.matteElement = null), this.maskManager && (this.maskManager.destroy(), this.maskManager = null)
+    }, HBaseElement.prototype.getDomElement = function() {
+        return this.layerElement
+    }, HBaseElement.prototype.addMasks = function(t) {
+        this.maskManager = new MaskElement(t, this, this.globalData)
+    }, HBaseElement.prototype.hide = function() {}, HBaseElement.prototype.setMatte = function() {}, HBaseElement.prototype.buildElementParenting = HybridRenderer.prototype.buildElementParenting, createElement(HBaseElement, HSolidElement), HSolidElement.prototype.createElements = function() {
+        var t = document.createElement("div");
+        styleDiv(t);
+        var e = document.createElementNS(svgNS, "svg");
+        styleDiv(e), e.setAttribute("width", this.data.sw), e.setAttribute("height", this.data.sh), t.appendChild(e), this.layerElement = t, this.transformedElement = t, this.baseElement = t, this.innerElem = t, this.data.ln && this.innerElem.setAttribute("id", this.data.ln), 0 !== this.data.bm && this.setBlendMode();
+        var r = document.createElementNS(svgNS, "rect");
+        r.setAttribute("width", this.data.sw), r.setAttribute("height", this.data.sh), r.setAttribute("fill", this.data.sc), e.appendChild(r), this.data.hasMask && (this.maskedElement = r), this.checkParenting()
+    }, HSolidElement.prototype.hide = IImageElement.prototype.hide, HSolidElement.prototype.renderFrame = IImageElement.prototype.renderFrame, HSolidElement.prototype.destroy = IImageElement.prototype.destroy, createElement(HBaseElement, HCompElement), HCompElement.prototype.createElements = function() {
+        var t = document.createElement("div");
+        if (styleDiv(t), this.data.ln && t.setAttribute("id", this.data.ln), t.style.clip = "rect(0px, " + this.data.w + "px, " + this.data.h + "px, 0px)", this.data.hasMask) {
+            var e = document.createElementNS(svgNS, "svg");
+            styleDiv(e), e.setAttribute("width", this.data.w), e.setAttribute("height", this.data.h);
+            var r = document.createElementNS(svgNS, "g");
+            e.appendChild(r), t.appendChild(e), this.maskedElement = r, this.baseElement = t, this.layerElement = r, this.transformedElement = t
+        } else this.layerElement = t, this.baseElement = this.layerElement, this.transformedElement = t;
+        this.checkParenting()
+    }, HCompElement.prototype.hide = ICompElement.prototype.hide, HCompElement.prototype.prepareFrame = ICompElement.prototype.prepareFrame, HCompElement.prototype.setElements = ICompElement.prototype.setElements, HCompElement.prototype.getElements = ICompElement.prototype.getElements, HCompElement.prototype.destroy = ICompElement.prototype.destroy, HCompElement.prototype.renderFrame = function(t) {
+        var e, r = this._parent.renderFrame.call(this, t),
+            i = this.layers.length;
+        if (r === !1) return void this.hide();
+        for (this.hidden = !1, e = 0; i > e; e += 1)(this.completeLayers || this.elements[e]) && this.elements[e].renderFrame();
+        this.firstFrame && (this.firstFrame = !1)
+    }, HCompElement.prototype.checkLayers = BaseRenderer.prototype.checkLayers, HCompElement.prototype.buildItem = HybridRenderer.prototype.buildItem, HCompElement.prototype.checkPendingElements = HybridRenderer.prototype.checkPendingElements, HCompElement.prototype.addPendingElement = HybridRenderer.prototype.addPendingElement, HCompElement.prototype.buildAllItems = BaseRenderer.prototype.buildAllItems, HCompElement.prototype.createItem = HybridRenderer.prototype.createItem, HCompElement.prototype.buildElementParenting = HybridRenderer.prototype.buildElementParenting, HCompElement.prototype.createImage = HybridRenderer.prototype.createImage, HCompElement.prototype.createComp = HybridRenderer.prototype.createComp, HCompElement.prototype.createSolid = HybridRenderer.prototype.createSolid, HCompElement.prototype.createShape = HybridRenderer.prototype.createShape, HCompElement.prototype.createText = HybridRenderer.prototype.createText, HCompElement.prototype.createBase = HybridRenderer.prototype.createBase, HCompElement.prototype.appendElementInPos = HybridRenderer.prototype.appendElementInPos, createElement(HBaseElement, HShapeElement);
+    var parent = HShapeElement.prototype._parent;
+    extendPrototype(IShapeElement, HShapeElement), HShapeElement.prototype._parent = parent, HShapeElement.prototype.createElements = function() {
+        var t = document.createElement("div");
+        styleDiv(t);
+        var e = document.createElementNS(svgNS, "svg");
+        styleDiv(e);
+        var r = this.comp.data ? this.comp.data : this.globalData.compSize;
+        if (e.setAttribute("width", r.w), e.setAttribute("height", r.h), this.data.hasMask) {
+            var i = document.createElementNS(svgNS, "g");
+            t.appendChild(e), e.appendChild(i), this.maskedElement = i, this.layerElement = i, this.shapesContainer = i
+        } else t.appendChild(e), this.layerElement = e, this.shapesContainer = document.createElementNS(svgNS, "g"), this.layerElement.appendChild(this.shapesContainer);
+        this.data.hd || (this.baseElement = t), this.innerElem = t, this.data.ln && this.innerElem.setAttribute("id", this.data.ln), this.searchShapes(this.shapesData, this.viewData, this.layerElement, this.dynamicProperties, 0), this.buildExpressionInterface(), this.layerElement = t, this.transformedElement = t, this.shapeCont = e, 0 !== this.data.bm && this.setBlendMode(), this.checkParenting()
+    }, HShapeElement.prototype.renderFrame = function(t) {
+        var e = this._parent.renderFrame.call(this, t);
+        if (e === !1) return void this.hide();
+        if (this.hidden && (this.layerElement.style.display = "block", this.hidden = !1), this.renderModifiers(), this.addedTransforms.mdf = this.finalTransform.matMdf, this.addedTransforms.mats.length = 1, this.addedTransforms.mats[0] = this.finalTransform.mat, this.renderShape(null, null, !0, null), this.isVisible && (this.elemMdf || this.firstFrame)) {
+            var r = this.shapeCont.getBBox(),
+                i = !1;
+            this.currentBBox.w !== r.width && (this.currentBBox.w = r.width, this.shapeCont.setAttribute("width", r.width), i = !0), this.currentBBox.h !== r.height && (this.currentBBox.h = r.height, this.shapeCont.setAttribute("height", r.height), i = !0), (i || this.currentBBox.x !== r.x || this.currentBBox.y !== r.y) && (this.currentBBox.w = r.width, this.currentBBox.h = r.height, this.currentBBox.x = r.x, this.currentBBox.y = r.y, this.shapeCont.setAttribute("viewBox", this.currentBBox.x + " " + this.currentBBox.y + " " + this.currentBBox.w + " " + this.currentBBox.h), this.shapeCont.style.transform = this.shapeCont.style.webkitTransform = "translate(" + this.currentBBox.x + "px," + this.currentBBox.y + "px)")
+        }
+    }, createElement(HBaseElement, HTextElement), HTextElement.prototype.init = ITextElement.prototype.init, HTextElement.prototype.getMeasures = ITextElement.prototype.getMeasures, HTextElement.prototype.createPathShape = ITextElement.prototype.createPathShape, HTextElement.prototype.prepareFrame = ITextElement.prototype.prepareFrame, HTextElement.prototype.createElements = function() {
+        this.isMasked = this.checkMasks();
+        var t = document.createElement("div");
+        if (styleDiv(t), this.layerElement = t, this.transformedElement = t, this.isMasked) {
+            this.renderType = "svg";
+            var e = document.createElementNS(svgNS, "svg");
+            styleDiv(e), this.cont = e, this.compW = this.comp.data.w, this.compH = this.comp.data.h, e.setAttribute("width", this.compW), e.setAttribute("height", this.compH);
+            var r = document.createElementNS(svgNS, "g");
+            e.appendChild(r), t.appendChild(e), this.maskedElement = r, this.innerElem = r
+        } else this.renderType = "html", this.innerElem = t;
+        this.baseElement = t, this.checkParenting()
+    }, HTextElement.prototype.buildNewText = function() {
+        var t = this.currentTextDocumentData;
+        this.renderedLetters = Array.apply(null, {
+            length: this.currentTextDocumentData.l ? this.currentTextDocumentData.l.length : 0
+        }), this.innerElem.style.color = this.innerElem.style.fill = t.fc ? "rgb(" + Math.round(255 * t.fc[0]) + "," + Math.round(255 * t.fc[1]) + "," + Math.round(255 * t.fc[2]) + ")" : "rgba(0,0,0,0)", t.sc && (this.innerElem.style.stroke = "rgb(" + Math.round(255 * t.sc[0]) + "," + Math.round(255 * t.sc[1]) + "," + Math.round(255 * t.sc[2]) + ")", this.innerElem.style.strokeWidth = t.sw + "px");
+        var e = this.globalData.fontManager.getFontByName(t.f);
+        if (!this.globalData.fontManager.chars)
+            if (this.innerElem.style.fontSize = t.s + "px", this.innerElem.style.lineHeight = t.s + "px", e.fClass) this.innerElem.className = e.fClass;
+            else {
+                this.innerElem.style.fontFamily = e.fFamily;
+                var r = t.fWeight,
+                    i = t.fStyle;
+                this.innerElem.style.fontStyle = i, this.innerElem.style.fontWeight = r
+            } var n, s, a = t.l;
+        s = a.length;
+        var o, l, h, p, c = this.mHelper,
+            f = "",
+            u = 0;
+        for (n = 0; s > n; n += 1) {
+            if (this.globalData.fontManager.chars ? (this.textPaths[u] ? o = this.textPaths[u] : (o = document.createElementNS(svgNS, "path"), o.setAttribute("stroke-linecap", "butt"), o.setAttribute("stroke-linejoin", "round"), o.setAttribute("stroke-miterlimit", "4")), this.isMasked || (this.textSpans[u] ? (l = this.textSpans[u], h = l.children[0]) : (l = document.createElement("div"), h = document.createElementNS(svgNS, "svg"), h.appendChild(o), styleDiv(l)))) : this.isMasked ? o = this.textPaths[u] ? this.textPaths[u] : document.createElementNS(svgNS, "text") : this.textSpans[u] ? (l = this.textSpans[u], o = this.textPaths[u]) : (l = document.createElement("span"), styleDiv(l), o = document.createElement("span"), styleDiv(o), l.appendChild(o)), this.globalData.fontManager.chars) {
+                var d, m = this.globalData.fontManager.getCharData(t.t.charAt(n), e.fStyle, this.globalData.fontManager.getFontByName(t.f).fFamily);
+                if (d = m ? m.data : null, c.reset(), d && d.shapes && (p = d.shapes[0].it, c.scale(t.s / 100, t.s / 100), f = this.createPathShape(c, p), o.setAttribute("d", f)), this.isMasked) this.innerElem.appendChild(o);
+                else if (this.innerElem.appendChild(l), d && d.shapes) {
+                    document.body.appendChild(h);
+                    var y = h.getBBox();
+                    h.setAttribute("width", y.width), h.setAttribute("height", y.height), h.setAttribute("viewBox", y.x + " " + y.y + " " + y.width + " " + y.height), h.style.transform = h.style.webkitTransform = "translate(" + y.x + "px," + y.y + "px)", a[n].yOffset = y.y, l.appendChild(h)
+                } else h.setAttribute("width", 1), h.setAttribute("height", 1)
+            } else o.textContent = a[n].val, o.setAttributeNS("http://www.w3.org/XML/1998/namespace", "xml:space", "preserve"), this.isMasked ? this.innerElem.appendChild(o) : (this.innerElem.appendChild(l), o.style.transform = o.style.webkitTransform = "translate3d(0," + -t.s / 1.2 + "px,0)");
+            this.textSpans[u] = this.isMasked ? o : l, this.textSpans[u].style.display = "block", this.textPaths[u] = o, u += 1
+        }
+        for (; u < this.textSpans.length;) this.textSpans[u].style.display = "none", u += 1
+    }, HTextElement.prototype.hide = SVGTextElement.prototype.hide, HTextElement.prototype.renderFrame = function(t) {
+        var e = this._parent.renderFrame.call(this, t);
+        if (e === !1) return void this.hide();
+        if (this.hidden && (this.hidden = !1, this.innerElem.style.display = "block", this.layerElement.style.display = "block"), this.data.singleShape) {
+            if (!this.firstFrame && !this.lettersChangedFlag) return;
+            this.isMasked && this.finalTransform.matMdf && (this.cont.setAttribute("viewBox", -this.finalTransform.mProp.p.v[0] + " " + -this.finalTransform.mProp.p.v[1] + " " + this.compW + " " + this.compH), this.cont.style.transform = this.cont.style.webkitTransform = "translate(" + -this.finalTransform.mProp.p.v[0] + "px," + -this.finalTransform.mProp.p.v[1] + "px)")
+        }
+        if (this.getMeasures(), this.lettersChangedFlag) {
+            var r, i, n = this.renderedLetters,
+                s = this.currentTextDocumentData.l;
+            i = s.length;
+            var a;
+            for (r = 0; i > r; r += 1) s[r].n || (a = n[r], this.isMasked ? this.textSpans[r].setAttribute("transform", a.m) : this.textSpans[r].style.transform = this.textSpans[r].style.webkitTransform = a.m, this.textSpans[r].style.opacity = a.o, a.sw && this.textPaths[r].setAttribute("stroke-width", a.sw), a.sc && this.textPaths[r].setAttribute("stroke", a.sc), a.fc && (this.textPaths[r].setAttribute("fill", a.fc), this.textPaths[r].style.color = a.fc));
+            if (this.isVisible && (this.elemMdf || this.firstFrame) && this.innerElem.getBBox) {
+                var o = this.innerElem.getBBox();
+                this.currentBBox.w !== o.width && (this.currentBBox.w = o.width, this.cont.setAttribute("width", o.width)), this.currentBBox.h !== o.height && (this.currentBBox.h = o.height, this.cont.setAttribute("height", o.height)), (this.currentBBox.w !== o.width || this.currentBBox.h !== o.height || this.currentBBox.x !== o.x || this.currentBBox.y !== o.y) && (this.currentBBox.w = o.width, this.currentBBox.h = o.height, this.currentBBox.x = o.x, this.currentBBox.y = o.y, this.cont.setAttribute("viewBox", this.currentBBox.x + " " + this.currentBBox.y + " " + this.currentBBox.w + " " + this.currentBBox.h), this.cont.style.transform = this.cont.style.webkitTransform = "translate(" + this.currentBBox.x + "px," + this.currentBBox.y + "px)")
+            }
+            this.firstFrame && (this.firstFrame = !1)
+        }
+    }, HTextElement.prototype.destroy = SVGTextElement.prototype.destroy, createElement(HBaseElement, HImageElement), HImageElement.prototype.createElements = function() {
+        var t = this.globalData.getAssetsPath(this.assetData),
+            e = new Image;
+        if (this.data.hasMask) {
+            var r = document.createElement("div");
+            styleDiv(r);
+            var i = document.createElementNS(svgNS, "svg");
+            styleDiv(i), i.setAttribute("width", this.assetData.w), i.setAttribute("height", this.assetData.h), r.appendChild(i), this.imageElem = document.createElementNS(svgNS, "image"), this.imageElem.setAttribute("width", this.assetData.w + "px"), this.imageElem.setAttribute("height", this.assetData.h + "px"), this.imageElem.setAttributeNS("http://www.w3.org/1999/xlink", "href", t), i.appendChild(this.imageElem), this.layerElement = r, this.transformedElement = r, this.baseElement = r, this.innerElem = r, this.maskedElement = this.imageElem
+        } else styleDiv(e), this.layerElement = e, this.baseElement = e, this.innerElem = e, this.transformedElement = e;
+        e.src = t, this.data.ln && this.innerElem.setAttribute("id", this.data.ln), this.checkParenting()
+    }, HImageElement.prototype.hide = HSolidElement.prototype.hide, HImageElement.prototype.renderFrame = HSolidElement.prototype.renderFrame, HImageElement.prototype.destroy = HSolidElement.prototype.destroy, createElement(HBaseElement, HCameraElement), HCameraElement.prototype.setup = function() {
+        var t, e, r = this.comp.threeDElements.length;
+        for (t = 0; r > t; t += 1) e = this.comp.threeDElements[t], e.perspectiveElem.style.perspective = e.perspectiveElem.style.webkitPerspective = this.pe.v + "px", e.container.style.transformOrigin = e.container.style.mozTransformOrigin = e.container.style.webkitTransformOrigin = "0px 0px 0px", e.perspectiveElem.style.transform = e.perspectiveElem.style.webkitTransform = "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)"
+    }, HCameraElement.prototype.createElements = function() {}, HCameraElement.prototype.hide = function() {}, HCameraElement.prototype.renderFrame = function() {
+        var t, e, r = this.firstFrame;
+        if (this.hierarchy)
+            for (e = this.hierarchy.length, t = 0; e > t; t += 1) r = this.hierarchy[t].finalTransform.mProp.mdf ? !0 : r;
+        if (r || this.p && this.p.mdf || this.px && (this.px.mdf || this.py.mdf || this.pz.mdf) || this.rx.mdf || this.ry.mdf || this.rz.mdf || this.or.mdf || this.a && this.a.mdf) {
+            if (this.mat.reset(), this.p ? this.mat.translate(-this.p.v[0], -this.p.v[1], this.p.v[2]) : this.mat.translate(-this.px.v, -this.py.v, this.pz.v), this.a) {
+                var i = [this.p.v[0] - this.a.v[0], this.p.v[1] - this.a.v[1], this.p.v[2] - this.a.v[2]],
+                    n = Math.sqrt(Math.pow(i[0], 2) + Math.pow(i[1], 2) + Math.pow(i[2], 2)),
+                    s = [i[0] / n, i[1] / n, i[2] / n],
+                    a = Math.sqrt(s[2] * s[2] + s[0] * s[0]),
+                    o = Math.atan2(s[1], a),
+                    l = Math.atan2(s[0], -s[2]);
+                this.mat.rotateY(l).rotateX(-o)
+            }
+            if (this.mat.rotateX(-this.rx.v).rotateY(-this.ry.v).rotateZ(this.rz.v), this.mat.rotateX(-this.or.v[0]).rotateY(-this.or.v[1]).rotateZ(this.or.v[2]), this.mat.translate(this.globalData.compSize.w / 2, this.globalData.compSize.h / 2, 0), this.mat.translate(0, 0, this.pe.v), this.hierarchy) {
+                var h;
+                for (e = this.hierarchy.length, t = 0; e > t; t += 1) h = this.hierarchy[t].finalTransform.mProp.iv.props, this.mat.transform(h[0], h[1], h[2], h[3], h[4], h[5], h[6], h[7], h[8], h[9], h[10], h[11], -h[12], -h[13], h[14], h[15])
+            }
+            e = this.comp.threeDElements.length;
+            var p;
+            for (t = 0; e > t; t += 1) p = this.comp.threeDElements[t], p.container.style.transform = p.container.style.webkitTransform = this.mat.toCSS()
+        }
+        this.firstFrame = !1
     }, HCameraElement.prototype.destroy = function() {};
     var Expressions = function() {
         function t(t) {
@@ -7785,7 +8697,18 @@ function getCurrentMouth(t, e) {
                             get: function() {
                                 return ExpressionValue(e.s, 1 / e.s.mult)
                             }
-                       
+                        }), Object.defineProperty(n, "end", {
+                            get: function() {
+                                return ExpressionValue(e.e, 1 / e.e.mult)
+                            }
+                        }), Object.defineProperty(n, "offset", {
+                            get: function() {
+                                return ExpressionValue(e.o)
+                            }
+                        }), Object.defineProperty(n, "_name", {
+                            get: function() {
+                                return t.nm
+                            }
                         }), n.mn = t.mn, n
                     }
                 }(),
@@ -8406,7 +9329,7 @@ function(t) {
 var aniRels = [];
 window.dropAniRels = function() {
     aniRels = []
-}, $.fn.c= function t() {
+}, $.fn.cryptonA = function t() {
     if (0 === this.length) return this;
     var e;
     if (arguments.length > 1) {
@@ -8460,7 +9383,7 @@ var animationParams = movieElements.map(function(t, e) {
                 progressiveLoad: !0,
                 hideOnTransparent: !0
             },
-            path: ""
+            // path: "https://crypton.trading/anim_json/0" + e + ".json"
         }
     }),
     movies = [];
@@ -8550,5 +9473,35 @@ window.faceTalk = function(t, e) {
         var r = getCurrentEye(t),
             i = r + getCurrentMouth(t, e) + r;
         i !== prevFace && (i && $face.html("<span>" + i.split("").join("</span><span>") + "</span>"), prevFace = i), prevFrameWithPrint = window.frameWithPrint
-    }
-   
+    },
+    function(t) {
+        t("a[data-target_id]").click(function() {
+            var e = t(this);
+            return $cache(".b_menu").removeClass("active"), scrollByLink(e), !1
+        }), t("a.nav-main_brand").click(function() {
+            return $cache(".b_menu").removeClass("active"), window.location.hash && "#" !== window.location.hash && (window.location.hash = ""), window.resetScenario(), !1
+        }), t(".js-menuToggle").click(function(t) {
+            t.preventDefault(), $cache(".b_menu").toggleClass("active")
+        }), window.scrollByLink = function(t) {
+            var e = $cache(t.attr("data-target_id")),
+                r = parseInt(t.attr("data-target_frame")),
+                i = t.attr("href").split("#")[1],
+                n = t.data("targetJump"),
+                s = e.closest(".animBlock");
+            n && 0 > n && (s = s.prev());
+            var a = s.data("animTop") || s.prevAll().get().reduce(function(t, e) {
+                    return t + e.offsetHeight
+                }, 0),
+                o = n ? a : $scrollable.scrollTop(),
+                l = 20 * Math.sqrt(Math.abs(a + r - o)),
+                h = $scrollable[0] === window ? $cache("html, body") : $scrollable;
+            h.stop(!0), n && h.scrollTop(a), h.animate({
+                scrollTop: a + r
+            }, l, function() {
+                window.location.hash = i || ""
+            })
+        }
+    }(jQuery);
+
+
+    

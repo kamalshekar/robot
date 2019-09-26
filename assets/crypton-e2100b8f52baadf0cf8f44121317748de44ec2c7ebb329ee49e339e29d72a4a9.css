@@ -292,7 +292,7 @@ input[type=button] {
 	font: bold 20px/1.25 'Space Mono';
 	text-align: center;
 	text-decoration: none;
-	color: #fff
+	color: #186ab4;
 }
 
 .nav-main_brand>span {
@@ -327,13 +327,13 @@ body.android .nav-main_brand>span:nth-child(2) {
 	font-weight: bold;
 	line-height: 1.88;
 	text-align: left;
-	color: #fff;
+	color: #186ab4;
 	text-decoration: none;
 	border-bottom: 2px solid transparent
 }
 
 .b_menu a:hover {
-	border-bottom: 2px solid #fff
+	border-bottom: 2px solid #186ab4;
 }
 
 .menu-toggle {
@@ -404,7 +404,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 	right: 0;
 	padding: 2.43056vw 2.77778vw;
 	font: 16px 'Space Mono';
-	color: #fff;
+	color: #186ab4;
 	text-align: right
 }
 
@@ -422,14 +422,14 @@ body.android .nav-main_brand>span:nth-child(2) {
 }
 
 .social-share__link {
-	color: #fff;
+	color: #186ab4;
 	text-decoration: none;
 	border-bottom: 2px solid transparent;
 	font-weight: bold
 }
 
 .social-share__link:hover {
-	border-bottom: 2px solid #fff
+	border-bottom: 2px solid #186ab4
 }
 
 .social-share:hover>.social-share__list,
@@ -466,7 +466,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 	font-weight: bold;
 	line-height: 1.0;
 	text-align: left;
-	color: #fff;
+	color: #186ab4;
 	font-family: 'Space Mono'
 }
 
@@ -492,7 +492,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 	font-family: 'Work Sans';
 	line-height: 1.5;
 	text-align: left;
-	color: #fff;
+	color: #186ab4;
 	margin-top: 27px;
 	font-size: 24px;
 	max-width: 360px
@@ -514,7 +514,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 
 .b_text__caption {
 	line-height: 1.0;
-	color: #fff;
+	color: #186ab4;
 	font-style: normal;
 	font-family: 'Space Mono'
 }
@@ -555,7 +555,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 	font-weight: 400;
 	font-style: normal;
 	font-family: 'Work Sans';
-	color: #ccc;
+	color: #186ab4;
 	padding: 2.08333vw 0
 }
 
@@ -636,7 +636,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 .animItem__arrow:before {
 	display: block;
 	content: "";
-	border-left: 2px solid #fff;
+	border-left: 2px solid #186ab4;
 	width: 0;
 	position: absolute;
 	top: 0;
@@ -653,7 +653,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 	width: 8px;
 	border-width: 2px 2px 0 0;
 	border-style: solid;
-	border-color: #fff;
+	border-color: #186ab4;
 	-webkit-transform: rotate(135deg);
 	-moz-transform: rotate(135deg);
 	-ms-transform: rotate(135deg);
@@ -929,7 +929,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 
 .rect-2 {
 	height: 100%;
-	background-color: #186ab4;
+	background-color: #ffffff;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -1147,7 +1147,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 }
 
 body {
-	background:#186ab4;
+	background: #ffffff;
 	font-family: 'Space Mono';
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale
