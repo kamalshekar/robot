@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 240" style="">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-5 {
+        fill: #25b80e;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: bevel;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        stroke: #fe0000;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_30" data-name="Group 30" transform="translate(10 -86)">
+    <g id="Group_11" data-name="Group 11" transform="translate(-46)">
+      <g id="Image_1" data-name="Image 1" class="cls-1" transform="translate(178 125)">
+        <path class="cls-6 OtCIlvax_0" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_1" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_2" data-name="Rectangle 2" class="cls-2" transform="translate(178 223)">
+        <path class="cls-6 OtCIlvax_2" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_3" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Rectangle_1" data-name="Rectangle 1" class="cls-1" transform="translate(171 154)">
+        <path class="cls-6 OtCIlvax_4" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_5" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_10" data-name="Group 10" transform="translate(-30 11)">
+      <g id="Rectangle_2-2" data-name="Rectangle 2" class="cls-3" transform="translate(392 262)">
+        <path class="cls-6 OtCIlvax_6" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_7" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Image_1-2" data-name="Image 1" class="cls-4" transform="translate(392 164)">
+        <path class="cls-6 OtCIlvax_8" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_9" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-2" data-name="Rectangle 1" class="cls-4" transform="translate(385 193)">
+        <path class="cls-6 OtCIlvax_10" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_11" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_12" data-name="Group 12" transform="translate(103)">
+      <g id="Image_1-3" data-name="Image 1" class="cls-1" transform="translate(178 125)">
+        <path class="cls-6 OtCIlvax_12" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_13" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_2-3" data-name="Rectangle 2" class="cls-2" transform="translate(178 223)">
+        <path class="cls-6 OtCIlvax_14" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_15" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-3" data-name="Rectangle 1" class="cls-1" transform="translate(171 154)">
+        <path class="cls-6 OtCIlvax_16" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_17" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_13" data-name="Group 13" transform="translate(-181 57)">
+      <g id="Image_1-4" data-name="Image 1" class="cls-1" transform="translate(178 125)">
+        <path class="cls-6 OtCIlvax_18" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_19" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_2-4" data-name="Rectangle 2" class="cls-2" transform="translate(178 223)">
+        <path class="cls-6 OtCIlvax_20" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_21" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-4" data-name="Rectangle 1" class="cls-1" transform="translate(171 154)">
+        <path class="cls-6 OtCIlvax_22" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_23" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_14" data-name="Group 14" transform="translate(252 27)">
+      <g id="Image_1-5" data-name="Image 1" class="cls-1" transform="translate(178 125)">
+        <path class="cls-6 OtCIlvax_24" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_25" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_2-5" data-name="Rectangle 2" class="cls-2" transform="translate(178 223)">
+        <path class="cls-6 OtCIlvax_26" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_27" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-5" data-name="Rectangle 1" class="cls-1" transform="translate(171 154)">
+        <path class="cls-6 OtCIlvax_28" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_29" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_15" data-name="Group 15" transform="translate(-127 84)">
+      <g id="Image_1-6" data-name="Image 1" class="cls-1" transform="translate(178 125)">
+        <path class="cls-6 OtCIlvax_30" width="7" height="19.642" d="M0 0 L7 0 L7 19.642 L0 19.642 Z"></path>
+        <path class="cls-7 OtCIlvax_31" width="6" height="18.642" d="M0.5 0.5 L6.5 0.5 L6.5 19.142 L0.5 19.142 Z"></path>
+      </g>
+      <g id="Rectangle_2-6" data-name="Rectangle 2" class="cls-2" transform="translate(178 174.358)">
+        <path class="cls-6 OtCIlvax_32" width="7" height="19.642" d="M0 0 L7 0 L7 19.642 L0 19.642 Z"></path>
+        <path class="cls-7 OtCIlvax_33" width="8" height="20.642" d="M-0.5 -0.5 L7.5 -0.5 L7.5 20.142 L-0.5 20.142 Z"></path>
+      </g>
+      <g id="Rectangle_1-6" data-name="Rectangle 1" class="cls-1" transform="translate(171 139.606)">
+        <path class="cls-6 OtCIlvax_34" width="21" height="42.307" d="M0 0 L21 0 L21 42.307 L0 42.307 Z"></path>
+        <path class="cls-7 OtCIlvax_35" width="20" height="41.307" d="M0.5 0.5 L20.5 0.5 L20.5 41.807 L0.5 41.807 Z"></path>
+      </g>
+    </g>
+    <g id="Group_16" data-name="Group 16" transform="translate(49 57)">
+      <g id="Image_1-7" data-name="Image 1" class="cls-1" transform="translate(178 125)">
+        <path class="cls-6 OtCIlvax_36" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_37" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_2-7" data-name="Rectangle 2" class="cls-2" transform="translate(178 223)">
+        <path class="cls-6 OtCIlvax_38" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_39" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-7" data-name="Rectangle 1" class="cls-1" transform="translate(171 154)">
+        <path class="cls-6 OtCIlvax_40" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_41" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_17" data-name="Group 17" transform="translate(65 -57)">
+      <g id="Rectangle_2-8" data-name="Rectangle 2" class="cls-3" transform="translate(392 262)">
+        <path class="cls-6 OtCIlvax_42" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_43" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Image_1-8" data-name="Image 1" class="cls-4" transform="translate(392 164)">
+        <path class="cls-6 OtCIlvax_44" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_45" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-8" data-name="Rectangle 1" class="cls-4" transform="translate(385 193)">
+        <path class="cls-6 OtCIlvax_46" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_47" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_18" data-name="Group 18" transform="translate(92 -78)">
+      <g id="Rectangle_2-9" data-name="Rectangle 2" class="cls-3" transform="translate(392 262)">
+        <path class="cls-6 OtCIlvax_48" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_49" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Image_1-9" data-name="Image 1" class="cls-4" transform="translate(392 164)">
+        <path class="cls-6 OtCIlvax_50" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_51" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-9" data-name="Rectangle 1" class="cls-4" transform="translate(385 193)">
+        <path class="cls-6 OtCIlvax_52" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_53" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_19" data-name="Group 19" transform="translate(-368 84)">
+      <g id="Rectangle_2-10" data-name="Rectangle 2" class="cls-3" transform="translate(392 218.007)">
+        <path class="cls-6 OtCIlvax_54" width="7" height="21.493" d="M0 0 L7 0 L7 21.493 L0 21.493 Z"></path>
+        <path class="cls-7 OtCIlvax_55" width="8" height="22.493" d="M-0.5 -0.5 L7.5 -0.5 L7.5 21.993 L-0.5 21.993 Z"></path>
+      </g>
+      <g id="Image_1-10" data-name="Image 1" class="cls-4" transform="translate(392 164)">
+        <path class="cls-6 OtCIlvax_56" width="7" height="21.493" d="M0 0 L7 0 L7 21.493 L0 21.493 Z"></path>
+        <path class="cls-7 OtCIlvax_57" width="6" height="20.493" d="M0.5 0.5 L6.5 0.5 L6.5 20.993 L0.5 20.993 Z"></path>
+      </g>
+      <g id="Rectangle_1-10" data-name="Rectangle 1" class="cls-4" transform="translate(385 179.982)">
+        <path class="cls-6 OtCIlvax_58" width="21" height="46.292" d="M0 0 L21 0 L21 46.292 L0 46.292 Z"></path>
+        <path class="cls-7 OtCIlvax_59" width="20" height="45.292" d="M0.5 0.5 L20.5 0.5 L20.5 45.792 L0.5 45.792 Z"></path>
+      </g>
+    </g>
+    <g id="Group_20" data-name="Group 20" transform="translate(-314 -20)">
+      <g id="Rectangle_2-11" data-name="Rectangle 2" class="cls-3" transform="translate(392 262)">
+        <path class="cls-6 OtCIlvax_60" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_61" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Image_1-11" data-name="Image 1" class="cls-4" transform="translate(392 164)">
+        <path class="cls-6 OtCIlvax_62" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_63" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-11" data-name="Rectangle 1" class="cls-4" transform="translate(385 193)">
+        <path class="cls-6 OtCIlvax_64" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_65" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_21" data-name="Group 21" transform="translate(-287 20)">
+      <g id="Rectangle_2-12" data-name="Rectangle 2" class="cls-3" transform="translate(392 262)">
+        <path class="cls-6 OtCIlvax_66" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_67" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Image_1-12" data-name="Image 1" class="cls-4" transform="translate(392 164)">
+        <path class="cls-6 OtCIlvax_68" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_69" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-12" data-name="Rectangle 1" class="cls-4" transform="translate(385 193)">
+        <path class="cls-6 OtCIlvax_70" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_71" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_24" data-name="Group 24" transform="translate(-138 24)">
+      <g id="Rectangle_2-13" data-name="Rectangle 2" class="cls-3" transform="translate(392 262)">
+        <path class="cls-6 OtCIlvax_72" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_73" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Image_1-13" data-name="Image 1" class="cls-4" transform="translate(392 164)">
+        <path class="cls-6 OtCIlvax_74" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_75" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-13" data-name="Rectangle 1" class="cls-4" transform="translate(385 193)">
+        <path class="cls-6 OtCIlvax_76" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_77" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_25" data-name="Group 25" transform="translate(138 -129)">
+      <g id="Rectangle_4" data-name="Rectangle 4" class="cls-3" transform="translate(257 392)">
+        <path class="cls-6 OtCIlvax_78" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_79" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Rectangle_3" data-name="Rectangle 3" class="cls-4" transform="translate(252 347)">
+        <path class="cls-6 OtCIlvax_80" width="17" height="68" d="M0 0 L17 0 L17 68 L0 68 Z"></path>
+        <path class="cls-7 OtCIlvax_81" width="16" height="67" d="M0.5 0.5 L16.5 0.5 L16.5 67.5 L0.5 67.5 Z"></path>
+      </g>
+      <g id="Group_22" data-name="Group 22" transform="translate(59 5)">
+        <g id="Ellipse_1" data-name="Ellipse 1" class="cls-4" transform="translate(185 333)">
+          <path class="cls-6 OtCIlvax_82" d="M0,16A17.5,16 0,1,1 35,16A17.5,16 0,1,1 0,16"></path>
+          <path class="cls-7 OtCIlvax_83" d="M0.5,16A17,15.5 0,1,1 34.5,16A17,15.5 0,1,1 0.5,16"></path>
+        </g>
+        <g id="Ellipse_2" data-name="Ellipse 2" class="cls-5" transform="translate(195 340)">
+          <path class="cls-6 OtCIlvax_84" d="M0,9A8,9 0,1,1 16,9A8,9 0,1,1 0,9"></path>
+          <path class="cls-7 OtCIlvax_85" d="M0.5,9A7.5,8.5 0,1,1 15.5,9A7.5,8.5 0,1,1 0.5,9"></path>
+        </g>
+      </g>
+    </g>
+    <g id="Group_26" data-name="Group 26" transform="translate(-33 -177)">
+      <g id="Rectangle_4-2" data-name="Rectangle 4" class="cls-3" transform="translate(199 403)">
+        <path class="cls-6 OtCIlvax_86" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_87" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Rectangle_5" data-name="Rectangle 5" class="cls-3" transform="translate(199 305)">
+        <path class="cls-6 OtCIlvax_88" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_89" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Rectangle_3-2" data-name="Rectangle 3" class="cls-4" transform="translate(194 354)">
+        <path class="cls-6 OtCIlvax_90" width="17" height="68" d="M0 0 L17 0 L17 68 L0 68 Z"></path>
+        <path class="cls-7 OtCIlvax_91" width="16" height="67" d="M0.5 0.5 L16.5 0.5 L16.5 67.5 L0.5 67.5 Z"></path>
+      </g>
+      <g id="Group_22-2" data-name="Group 22" transform="translate(0 5)">
+        <g id="Ellipse_1-2" data-name="Ellipse 1" class="cls-4" transform="translate(185 333)">
+          <path class="cls-6 OtCIlvax_92" d="M0,16A17.5,16 0,1,1 35,16A17.5,16 0,1,1 0,16"></path>
+          <path class="cls-7 OtCIlvax_93" d="M0.5,16A17,15.5 0,1,1 34.5,16A17,15.5 0,1,1 0.5,16"></path>
+        </g>
+        <g id="Ellipse_2-2" data-name="Ellipse 2" class="cls-5" transform="translate(195 340)">
+          <path class="cls-6 OtCIlvax_94" d="M0,9A8,9 0,1,1 16,9A8,9 0,1,1 0,9"></path>
+          <path class="cls-7 OtCIlvax_95" d="M0.5,9A7.5,8.5 0,1,1 15.5,9A7.5,8.5 0,1,1 0.5,9"></path>
+        </g>
+      </g>
+    </g>
+    <g id="Group_27" data-name="Group 27" transform="translate(-192 -14)">
+      <g id="Rectangle_2-14" data-name="Rectangle 2" class="cls-3" transform="translate(392 218.007)">
+        <path class="cls-6 OtCIlvax_96" width="7" height="21.493" d="M0 0 L7 0 L7 21.493 L0 21.493 Z"></path>
+        <path class="cls-7 OtCIlvax_97" width="8" height="22.493" d="M-0.5 -0.5 L7.5 -0.5 L7.5 21.993 L-0.5 21.993 Z"></path>
+      </g>
+      <g id="Image_1-14" data-name="Image 1" class="cls-4" transform="translate(392 164)">
+        <path class="cls-6 OtCIlvax_98" width="7" height="21.493" d="M0 0 L7 0 L7 21.493 L0 21.493 Z"></path>
+        <path class="cls-7 OtCIlvax_99" width="6" height="20.493" d="M0.5 0.5 L6.5 0.5 L6.5 20.993 L0.5 20.993 Z"></path>
+      </g>
+      <g id="Rectangle_1-14" data-name="Rectangle 1" class="cls-4" transform="translate(385 179.982)">
+        <path class="cls-6 OtCIlvax_100" width="21" height="46.292" d="M0 0 L21 0 L21 46.292 L0 46.292 Z"></path>
+        <path class="cls-7 OtCIlvax_101" width="20" height="45.292" d="M0.5 0.5 L20.5 0.5 L20.5 45.792 L0.5 45.792 Z"></path>
+      </g>
+    </g>
+    <g id="Group_28" data-name="Group 28" transform="translate(130 -18)">
+      <g id="Image_1-15" data-name="Image 1" class="cls-1" transform="translate(178 125)">
+        <path class="cls-6 OtCIlvax_102" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_103" width="6" height="38" d="M0.5 0.5 L6.5 0.5 L6.5 38.5 L0.5 38.5 Z"></path>
+      </g>
+      <g id="Rectangle_2-15" data-name="Rectangle 2" class="cls-2" transform="translate(178 223)">
+        <path class="cls-6 OtCIlvax_104" width="7" height="39" d="M0 0 L7 0 L7 39 L0 39 Z"></path>
+        <path class="cls-7 OtCIlvax_105" width="8" height="40" d="M-0.5 -0.5 L7.5 -0.5 L7.5 39.5 L-0.5 39.5 Z"></path>
+      </g>
+      <g id="Rectangle_1-15" data-name="Rectangle 1" class="cls-1" transform="translate(171 154)">
+        <path class="cls-6 OtCIlvax_106" width="21" height="84" d="M0 0 L21 0 L21 84 L0 84 Z"></path>
+        <path class="cls-7 OtCIlvax_107" width="20" height="83" d="M0.5 0.5 L20.5 0.5 L20.5 83.5 L0.5 83.5 Z"></path>
+      </g>
+    </g>
+    <g id="Group_29" data-name="Group 29" transform="translate(157 81)">
+      <g id="Image_1-16" data-name="Image 1" class="cls-1" transform="translate(178 125)">
+        <path class="cls-6 OtCIlvax_108" width="7" height="19.642" d="M0 0 L7 0 L7 19.642 L0 19.642 Z"></path>
+        <path class="cls-7 OtCIlvax_109" width="6" height="18.642" d="M0.5 0.5 L6.5 0.5 L6.5 19.142 L0.5 19.142 Z"></path>
+      </g>
+      <g id="Rectangle_2-16" data-name="Rectangle 2" class="cls-2" transform="translate(178 174.358)">
+        <path class="cls-6 OtCIlvax_110" width="7" height="19.642" d="M0 0 L7 0 L7 19.642 L0 19.642 Z"></path>
+        <path class="cls-7 OtCIlvax_111" width="8" height="20.642" d="M-0.5 -0.5 L7.5 -0.5 L7.5 20.142 L-0.5 20.142 Z"></path>
+      </g>
+      <g id="Rectangle_1-16" data-name="Rectangle 1" class="cls-1" transform="translate(171 139.606)">
+        <path class="cls-6 OtCIlvax_112" width="21" height="42.307" d="M0 0 L21 0 L21 42.307 L0 42.307 Z"></path>
+        <path class="cls-7 OtCIlvax_113" width="20" height="41.307" d="M0.5 0.5 L20.5 0.5 L20.5 41.807 L0.5 41.807 Z"></path>
+      </g>
+    </g>
+  </g>
+<style data-made-with="vivus-instant">.OtCIlvax_0{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_0 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_1{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_1 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_2{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_2 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_3{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_3 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_4{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_4 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_5{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_5 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_6{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_6 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_7{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_7 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_8{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_8 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_9{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_9 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_10{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_10 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_11{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_11 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_12{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_12 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_13{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_13 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_14{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_14 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_15{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_15 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_16{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_16 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_17{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_17 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_18{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_18 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_19{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_19 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_20{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_20 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_21{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_21 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_22{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_22 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_23{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_23 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_24{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_24 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_25{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_25 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_26{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_26 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_27{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_27 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_28{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_28 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_29{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_29 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_30{stroke-dasharray:54 56;stroke-dashoffset:55;animation:OtCIlvax_draw_30 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_31{stroke-dasharray:50 52;stroke-dashoffset:51;animation:OtCIlvax_draw_31 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_32{stroke-dasharray:54 56;stroke-dashoffset:55;animation:OtCIlvax_draw_32 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_33{stroke-dasharray:58 60;stroke-dashoffset:59;animation:OtCIlvax_draw_33 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_34{stroke-dasharray:127 129;stroke-dashoffset:128;animation:OtCIlvax_draw_34 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_35{stroke-dasharray:123 125;stroke-dashoffset:124;animation:OtCIlvax_draw_35 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_36{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_36 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_37{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_37 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_38{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_38 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_39{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_39 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_40{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_40 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_41{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_41 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_42{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_42 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_43{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_43 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_44{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_44 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_45{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_45 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_46{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_46 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_47{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_47 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_48{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_48 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_49{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_49 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_50{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_50 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_51{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_51 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_52{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_52 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_53{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_53 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_54{stroke-dasharray:57 59;stroke-dashoffset:58;animation:OtCIlvax_draw_54 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_55{stroke-dasharray:61 63;stroke-dashoffset:62;animation:OtCIlvax_draw_55 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_56{stroke-dasharray:57 59;stroke-dashoffset:58;animation:OtCIlvax_draw_56 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_57{stroke-dasharray:53 55;stroke-dashoffset:54;animation:OtCIlvax_draw_57 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_58{stroke-dasharray:135 137;stroke-dashoffset:136;animation:OtCIlvax_draw_58 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_59{stroke-dasharray:131 133;stroke-dashoffset:132;animation:OtCIlvax_draw_59 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_60{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_60 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_61{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_61 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_62{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_62 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_63{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_63 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_64{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_64 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_65{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_65 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_66{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_66 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_67{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_67 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_68{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_68 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_69{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_69 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_70{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_70 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_71{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_71 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_72{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_72 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_73{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_73 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_74{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_74 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_75{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_75 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_76{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_76 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_77{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_77 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_78{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_78 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_79{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_79 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_80{stroke-dasharray:170 172;stroke-dashoffset:171;animation:OtCIlvax_draw_80 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_81{stroke-dasharray:166 168;stroke-dashoffset:167;animation:OtCIlvax_draw_81 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_82{stroke-dasharray:106 108;stroke-dashoffset:107;animation:OtCIlvax_draw_82 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_83{stroke-dasharray:103 105;stroke-dashoffset:104;animation:OtCIlvax_draw_83 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_84{stroke-dasharray:54 56;stroke-dashoffset:55;animation:OtCIlvax_draw_84 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_85{stroke-dasharray:51 53;stroke-dashoffset:52;animation:OtCIlvax_draw_85 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_86{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_86 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_87{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_87 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_88{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_88 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_89{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_89 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_90{stroke-dasharray:170 172;stroke-dashoffset:171;animation:OtCIlvax_draw_90 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_91{stroke-dasharray:166 168;stroke-dashoffset:167;animation:OtCIlvax_draw_91 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_92{stroke-dasharray:106 108;stroke-dashoffset:107;animation:OtCIlvax_draw_92 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_93{stroke-dasharray:103 105;stroke-dashoffset:104;animation:OtCIlvax_draw_93 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_94{stroke-dasharray:54 56;stroke-dashoffset:55;animation:OtCIlvax_draw_94 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_95{stroke-dasharray:51 53;stroke-dashoffset:52;animation:OtCIlvax_draw_95 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_96{stroke-dasharray:57 59;stroke-dashoffset:58;animation:OtCIlvax_draw_96 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_97{stroke-dasharray:61 63;stroke-dashoffset:62;animation:OtCIlvax_draw_97 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_98{stroke-dasharray:57 59;stroke-dashoffset:58;animation:OtCIlvax_draw_98 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_99{stroke-dasharray:53 55;stroke-dashoffset:54;animation:OtCIlvax_draw_99 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_100{stroke-dasharray:135 137;stroke-dashoffset:136;animation:OtCIlvax_draw_100 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_101{stroke-dasharray:131 133;stroke-dashoffset:132;animation:OtCIlvax_draw_101 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_102{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_102 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_103{stroke-dasharray:88 90;stroke-dashoffset:89;animation:OtCIlvax_draw_103 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_104{stroke-dasharray:92 94;stroke-dashoffset:93;animation:OtCIlvax_draw_104 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_105{stroke-dasharray:96 98;stroke-dashoffset:97;animation:OtCIlvax_draw_105 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_106{stroke-dasharray:210 212;stroke-dashoffset:211;animation:OtCIlvax_draw_106 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_107{stroke-dasharray:206 208;stroke-dashoffset:207;animation:OtCIlvax_draw_107 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_108{stroke-dasharray:54 56;stroke-dashoffset:55;animation:OtCIlvax_draw_108 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_109{stroke-dasharray:50 52;stroke-dashoffset:51;animation:OtCIlvax_draw_109 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_110{stroke-dasharray:54 56;stroke-dashoffset:55;animation:OtCIlvax_draw_110 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_111{stroke-dasharray:58 60;stroke-dashoffset:59;animation:OtCIlvax_draw_111 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_112{stroke-dasharray:127 129;stroke-dashoffset:128;animation:OtCIlvax_draw_112 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}.OtCIlvax_113{stroke-dasharray:123 125;stroke-dashoffset:124;animation:OtCIlvax_draw_113 7200ms linear 0ms infinite,OtCIlvax_fade 7200ms linear 0ms infinite;}@keyframes OtCIlvax_draw{100%{stroke-dashoffset:0;}}@keyframes OtCIlvax_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes OtCIlvax_draw_0{11.11111111111111%{stroke-dashoffset: 93}38.88888888888889%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_1{11.23402163225172%{stroke-dashoffset: 89}39.011799410029504%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_2{11.35693215339233%{stroke-dashoffset: 93}39.13470993117011%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_3{11.479842674532941%{stroke-dashoffset: 97}39.25762045231072%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_4{11.60275319567355%{stroke-dashoffset: 211}39.38053097345133%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_5{11.725663716814159%{stroke-dashoffset: 207}39.50344149459194%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_6{11.84857423795477%{stroke-dashoffset: 93}39.62635201573255%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_7{11.971484759095379%{stroke-dashoffset: 97}39.74926253687316%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_8{12.094395280235988%{stroke-dashoffset: 93}39.87217305801376%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_9{12.217305801376598%{stroke-dashoffset: 89}39.995083579154375%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_10{12.340216322517207%{stroke-dashoffset: 211}40.117994100294986%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_11{12.463126843657816%{stroke-dashoffset: 207}40.24090462143559%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_12{12.586037364798427%{stroke-dashoffset: 93}40.3638151425762%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_13{12.708947885939036%{stroke-dashoffset: 89}40.48672566371681%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_14{12.831858407079647%{stroke-dashoffset: 93}40.60963618485742%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_15{12.954768928220256%{stroke-dashoffset: 97}40.73254670599803%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_16{13.077679449360865%{stroke-dashoffset: 211}40.85545722713864%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_17{13.200589970501476%{stroke-dashoffset: 207}40.978367748279254%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_18{13.323500491642084%{stroke-dashoffset: 93}41.10127826941986%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_19{13.446411012782693%{stroke-dashoffset: 89}41.224188790560476%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_20{13.569321533923304%{stroke-dashoffset: 93}41.347099311701086%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_21{13.692232055063913%{stroke-dashoffset: 97}41.47000983284169%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_22{13.815142576204522%{stroke-dashoffset: 211}41.5929203539823%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_23{13.938053097345133%{stroke-dashoffset: 207}41.71583087512291%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_24{14.060963618485742%{stroke-dashoffset: 93}41.83874139626352%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_25{14.183874139626354%{stroke-dashoffset: 89}41.96165191740413%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_26{14.306784660766962%{stroke-dashoffset: 93}42.08456243854474%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_27{14.42969518190757%{stroke-dashoffset: 97}42.20747295968535%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_28{14.55260570304818%{stroke-dashoffset: 211}42.33038348082596%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_29{14.67551622418879%{stroke-dashoffset: 207}42.45329400196657%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_30{14.7984267453294%{stroke-dashoffset: 55}42.57620452310717%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_31{14.921337266470012%{stroke-dashoffset: 51}42.69911504424779%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_32{15.04424778761062%{stroke-dashoffset: 55}42.822025565388394%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_33{15.16715830875123%{stroke-dashoffset: 59}42.944936086529005%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_34{15.29006882989184%{stroke-dashoffset: 128}43.067846607669615%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_35{15.412979351032446%{stroke-dashoffset: 124}43.190757128810226%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_36{15.535889872173057%{stroke-dashoffset: 93}43.31366764995083%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_37{15.658800393313665%{stroke-dashoffset: 89}43.43657817109145%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_38{15.781710914454278%{stroke-dashoffset: 93}43.55948869223206%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_39{15.904621435594887%{stroke-dashoffset: 97}43.68239921337267%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_40{16.027531956735498%{stroke-dashoffset: 211}43.80530973451327%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_41{16.150442477876105%{stroke-dashoffset: 207}43.92822025565388%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_42{16.273352999016716%{stroke-dashoffset: 93}44.051130776794494%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_43{16.396263520157326%{stroke-dashoffset: 97}44.174041297935105%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_44{16.519174041297934%{stroke-dashoffset: 93}44.29695181907571%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_45{16.642084562438544%{stroke-dashoffset: 89}44.41986234021632%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_46{16.764995083579155%{stroke-dashoffset: 211}44.54277286135693%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_47{16.887905604719762%{stroke-dashoffset: 207}44.66568338249754%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_48{17.010816125860373%{stroke-dashoffset: 93}44.78859390363815%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_49{17.133726647000984%{stroke-dashoffset: 97}44.911504424778755%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_50{17.256637168141594%{stroke-dashoffset: 93}45.03441494591937%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_51{17.3795476892822%{stroke-dashoffset: 89}45.15732546705998%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_52{17.502458210422812%{stroke-dashoffset: 211}45.28023598820059%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_53{17.62536873156342%{stroke-dashoffset: 207}45.403146509341205%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_54{17.74827925270403%{stroke-dashoffset: 58}45.52605703048181%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_55{17.87118977384464%{stroke-dashoffset: 62}45.64896755162241%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_56{17.994100294985248%{stroke-dashoffset: 58}45.77187807276303%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_57{18.117010816125863%{stroke-dashoffset: 54}45.89478859390364%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_58{18.23992133726647%{stroke-dashoffset: 136}46.017699115044245%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_59{18.36283185840708%{stroke-dashoffset: 132}46.14060963618486%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_60{18.48574237954769%{stroke-dashoffset: 93}46.263520157325466%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_61{18.6086529006883%{stroke-dashoffset: 97}46.38643067846608%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_62{18.731563421828906%{stroke-dashoffset: 93}46.50934119960669%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_63{18.854473942969516%{stroke-dashoffset: 89}46.63225172074729%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_64{18.977384464110127%{stroke-dashoffset: 211}46.7551622418879%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_65{19.100294985250734%{stroke-dashoffset: 207}46.87807276302851%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_66{19.22320550639135%{stroke-dashoffset: 93}47.00098328416912%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_67{19.346116027531956%{stroke-dashoffset: 97}47.123893805309734%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_68{19.469026548672566%{stroke-dashoffset: 93}47.246804326450345%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_69{19.591937069813177%{stroke-dashoffset: 89}47.36971484759095%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_70{19.714847590953784%{stroke-dashoffset: 211}47.49262536873156%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_71{19.8377581120944%{stroke-dashoffset: 207}47.61553588987218%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_72{19.960668633235002%{stroke-dashoffset: 93}47.73844641101278%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_73{20.083579154375613%{stroke-dashoffset: 97}47.86135693215339%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_74{20.206489675516224%{stroke-dashoffset: 93}47.984267453294%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_75{20.329400196656835%{stroke-dashoffset: 89}48.10717797443461%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_76{20.452310717797445%{stroke-dashoffset: 211}48.230088495575224%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_77{20.575221238938052%{stroke-dashoffset: 207}48.35299901671583%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_78{20.698131760078663%{stroke-dashoffset: 93}48.475909537856445%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_79{20.82104228121927%{stroke-dashoffset: 97}48.59882005899705%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_80{20.943952802359885%{stroke-dashoffset: 171}48.72173058013766%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_81{21.06686332350049%{stroke-dashoffset: 167}48.84464110127828%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_82{21.1897738446411%{stroke-dashoffset: 107}48.967551622418874%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_83{21.312684365781713%{stroke-dashoffset: 104}49.090462143559485%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_84{21.435594886922317%{stroke-dashoffset: 55}49.213372664700096%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_85{21.55850540806293%{stroke-dashoffset: 52}49.336283185840706%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_86{21.68141592920354%{stroke-dashoffset: 93}49.45919370698132%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_87{21.80432645034415%{stroke-dashoffset: 97}49.58210422812193%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_88{21.92723697148476%{stroke-dashoffset: 93}49.70501474926253%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_89{22.050147492625367%{stroke-dashoffset: 97}49.82792527040314%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_90{22.17305801376598%{stroke-dashoffset: 171}49.95083579154376%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_91{22.295968534906585%{stroke-dashoffset: 167}50.073746312684364%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_92{22.418879056047196%{stroke-dashoffset: 107}50.196656833824974%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_93{22.541789577187807%{stroke-dashoffset: 104}50.31956735496558%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_94{22.664700098328417%{stroke-dashoffset: 55}50.442477876106196%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_95{22.787610619469024%{stroke-dashoffset: 52}50.5653883972468%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_96{22.910521140609635%{stroke-dashoffset: 58}50.68829891838741%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_97{23.03343166175025%{stroke-dashoffset: 62}50.81120943952803%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_98{23.156342182890853%{stroke-dashoffset: 58}50.93411996066863%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_99{23.279252704031467%{stroke-dashoffset: 54}51.05703048180924%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_100{23.402163225172075%{stroke-dashoffset: 136}51.17994100294986%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_101{23.525073746312682%{stroke-dashoffset: 132}51.302851524090464%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_102{23.647984267453293%{stroke-dashoffset: 93}51.425762045231075%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_103{23.770894788593903%{stroke-dashoffset: 89}51.54867256637168%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_104{23.893805309734514%{stroke-dashoffset: 93}51.671583087512296%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_105{24.01671583087512%{stroke-dashoffset: 97}51.7944936086529%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_106{24.139626352015732%{stroke-dashoffset: 211}51.91740412979351%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_107{24.262536873156343%{stroke-dashoffset: 207}52.040314650934114%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_108{24.385447394296953%{stroke-dashoffset: 55}52.16322517207473%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_109{24.50835791543756%{stroke-dashoffset: 51}52.28613569321534%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_110{24.631268436578168%{stroke-dashoffset: 55}52.409046214355946%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_111{24.754178957718782%{stroke-dashoffset: 59}52.53195673549656%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_112{24.87708947885939%{stroke-dashoffset: 128}52.65486725663716%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes OtCIlvax_draw_113{25%{stroke-dashoffset: 124}52.77777777777778%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>

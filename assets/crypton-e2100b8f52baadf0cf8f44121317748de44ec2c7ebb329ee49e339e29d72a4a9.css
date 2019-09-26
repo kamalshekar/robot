@@ -542,7 +542,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 
 .b_text__invest {
 	width: auto;
-	color: #762bff
+	color: #000
 }
 
 .b_text__better {
@@ -801,7 +801,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 	}
 	.b_contacts__col.contacts-write-me {
 		left: 0;
-		background-color: #000
+		background-color: #04081c;
 	}
 	.b_contacts__col.contacts-call-me {
 		left: 25%
@@ -1112,7 +1112,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 		width: 29.86111vw
 	}
 	.im-cool-right {
-		left: 34.6%
+		left: 24.6%
 	}
 	.im-cool-right .b_text__caption {
 		padding-top: 3.47222vw
@@ -1206,3 +1206,185 @@ svg {max-width:500px;}
 /* 
  */
  
+
+ 
+
+
+ 
+
+ /* robo */
+ 
+
+
+
+
+
+
+
+
+
+/* robot moves */
+
+
+.robo {
+    max-width: 800px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+/* robot moves */
+#robo2 {
+  animation: slide 2s ease-in-out alternate infinite;
+}
+
+@keyframes slide {
+  to {
+     transform: translateX(10px)  scale(1.1);    
+  }
+}
+
+/* Eyes animation */
+#olho1, #olho2 {
+  animation: shine 2s linear  infinite;
+}
+
+@keyframes shine {
+    0% { fill: rgb(109, 110, 113); }
+    50% { fill: rgb(255, 255, 138); }
+    80% { fill: rgb(255, 255, 255); }
+    94% { fill: rgb(109, 110, 113); }
+    95% { fill: rgb(255, 255, 255); }
+    96% { fill: rgb(109, 110, 113); }
+    97% { fill: rgb(255, 255, 255); }
+    100% { fill: rgb(109, 110, 113); }
+}
+
+
+/* Lights animation */
+#light1 {
+  animation: lightsOrange .4s linear alternate infinite; 
+}
+#light2 {
+  animation: lightsBlue .8s linear alternate infinite; 
+}
+#light3 {
+  animation: lightsPink 1.2s linear alternate infinite; 
+}
+#light4 {
+  animation: lightsOrange 1.4s linear alternate infinite; 
+}
+#light5 {
+  animation: lightsBlue 1.6s linear alternate infinite; 
+}
+#light6 {
+  animation: lightsPink .8s linear alternate infinite; 
+}
+
+@-webkit-keyframes lightsOrange {
+  0% { fill: rgb(255, 255, 255); }
+  100% { fill: rgb(255, 122, 0); }
+}
+@-webkit-keyframes lightsPink {
+  0% { fill: rgb(255, 255, 255); }
+  100% { fill: rgb(231, 0, 87); }
+}
+@-webkit-keyframes lightsBlue {
+  0% { fill: rgb(255, 255, 255); }
+  100% { fill: rgb(0, 79, 231); }
+}
+
+/* helice */
+#helice {
+  animation: fly .1s linear alternate infinite; 
+  transform-origin: center center;
+}
+
+@keyframes fly {
+ from { transform: rotateX(0deg);  }
+  to { transform: rotateX(360deg); }
+}
+
+/* hands */
+
+#finger-1-right {
+  animation: moveFinger .6s linear alternate infinite; 
+  transform-origin: top center;
+}
+
+@keyframes moveFinger {
+  0% {transform: rotate(10deg);}
+  100% {transform: rotate(-10deg);}
+}
+
+#finger-1-left {
+  animation: moveFinger .5s linear alternate infinite; 
+  transform-origin: top right;
+}
+
+@keyframes moveFinger {
+  0% {transform: rotate(10deg);}
+  100% {transform: rotate(-10deg);}
+ }
+
+#finger-2-right {
+  animation: moveFinger .6s linear alternate infinite; 
+  transform-origin: bottom left;
+}
+
+@keyframes moveFinger {
+  0% {transform: rotate(10deg);}
+  100% {transform: rotate(-10deg);}
+}
+
+#finger-2-left {
+  -webkit-animation: moveFinger .5s linear alternate infinite;
+  -moz-animation: moveFinger .5s linear alternate infinite;
+  -ms-animation: moveFinger .5s linear alternate infinite;
+  -o-animation: moveFinger .5s linear alternate infinite;
+  animation: moveFinger .5s linear alternate infinite; 
+  transform-origin: top left;
+}
+
+@keyframes moveFinger {
+  0% {transform: rotate(10deg);}
+  100% {transform: rotate(-10deg);}
+ }
+
+
+
+
+
+ @media screen and (min-aspect-ratio: 960/600)
+ {
+	.bodymovins {
+    margin-top: 36vh;
+    margin-left: 0px;
+    width: 100%;
+	height: 0;
+	 }
+
+
+}
+
+
+
+
+
+
+
+#earth {
+	position: fixed;
+    width: 154% !important;
+    height: auto !important;
+    touch-action: manipulation;
+    background: linear-gradient(to bottom, #512C8A, #962264);
+    left: -8rem;
+}
