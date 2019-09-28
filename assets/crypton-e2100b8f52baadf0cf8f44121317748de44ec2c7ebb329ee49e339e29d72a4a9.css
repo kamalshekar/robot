@@ -927,6 +927,7 @@ body.android .nav-main_brand>span:nth-child(2) {
 	}
 }
 
+
 .rect-2 {
 	height: 100%;
 	background-color: #ffffff;
@@ -935,6 +936,9 @@ body.android .nav-main_brand>span:nth-child(2) {
 	right: 0;
 	overflow: hidden
 }
+
+
+
 
 @media screen and (min-aspect-ratio: 1 / 1) {
 	.rect-2 {
@@ -1402,3 +1406,20 @@ svg {max-width:500px;}
 }
 
 }
+
+
+
+
+
+video {
+	position: fixed;
+	left: 50%;
+	top: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background-size: cover;
+	transform: translateX(-50%);
+  }
